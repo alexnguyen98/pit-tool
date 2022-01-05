@@ -11,7 +11,10 @@ type Props = {
 };
 
 const Input: React.FC<Props> = ({ className, ...props }) => (
-  <input className={cn('bg-accent-0 shadow rounded-md border-2 border-accent-2 px-3 py-1', className)} {...props} />
+  <input
+    className={cn('shadow text-center rounded-lg py-2 px-3 text-md font-bold border-2 bg-primary border-accent-2 text-accent-5', className)}
+    {...props}
+  />
 );
 
 export default Input;

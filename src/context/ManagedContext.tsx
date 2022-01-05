@@ -4,6 +4,7 @@ import { QuestionT, ScoreT } from '../types';
 
 export interface State {
   finished: boolean;
+  maxQuestions: number;
   activeIndex: number;
   frequencies: number[];
   savedQuestions: QuestionT[];
@@ -13,6 +14,7 @@ export interface State {
 const initialState = {
   finished: false,
   activeIndex: 0,
+  maxQuestions: 25,
   frequencies: [],
   savedQuestions: [],
   scores: {},
@@ -26,6 +28,10 @@ type Action =
   | {
       type: 'SET_SAVED_QUESTIONS';
       questions: QuestionT[];
+    }
+  | {
+      type: 'SET_MAX_QUESTIONS';
+      max: number;
     }
   | {
       type: 'SET_SCORE';
@@ -59,6 +65,11 @@ const reducer = (state: State, action: Action) => {
       return {
         ...state,
         savedQuestions: action.questions,
+      };
+    case 'SET_MAX_QUESTIONS':
+      return {
+        ...state,
+        maxQuestions: action.max,
       };
     case 'SET_FREQUENCY':
       return {
@@ -113,6 +124,15 @@ const GlobalProvider: React.FC = (props) => {
     [dispatch]
   );
 
+  const setMaxQuestions = useCallback(
+    (max: number) =>
+      dispatch({
+        type: 'SET_MAX_QUESTIONS',
+        max,
+      }),
+    [dispatch]
+  );
+
   const setFrequencies = useCallback(
     (frequencies: number[]) =>
       dispatch({
@@ -161,6 +181,7 @@ const GlobalProvider: React.FC = (props) => {
       ...state,
       setData,
       setQuestions,
+      setMaxQuestions,
       setFrequencies,
       setScore,
       setActiveIndex,

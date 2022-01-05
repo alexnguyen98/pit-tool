@@ -1,7 +1,6 @@
 import React from 'react';
-import Accordion from '../components/common/Accordion';
-import Footer from '../components/layout/Footer';
 import Layout from '../components/containers/Layout';
+import Accordion from '../components/common/Accordion';
 
 const Help: React.FC = () => {
   return (
@@ -27,7 +26,6 @@ const Help: React.FC = () => {
           <br />
         </Accordion>
       </div>
-      <Footer />
     </Layout>
   );
 };

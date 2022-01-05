@@ -1,6 +1,6 @@
 import { QuestionT } from '../types';
 
-export const MAX_QUESTIONS = 25;
+export const MAX_QUESTIONS = 66;
 
 export const QUESTIONS: QuestionT[] = [
   {
