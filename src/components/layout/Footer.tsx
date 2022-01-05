@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import Github from '../icons/Github';
+// import Github from '../icons/Github';
 
 const Footer: React.FC = () => (
   <footer className="flex justify-center py-3 text-accent-3">
