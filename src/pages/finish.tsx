@@ -12,7 +12,7 @@ const Finish: React.FC = () => {
   const router = useRouter();
 
   let correct = 0;
-  let total = 20;
+  let total = 0;
   let mistakes = 0;
 
   (savedQuestions as QuestionT[]).forEach((i, indexI) => {
