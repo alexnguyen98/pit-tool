@@ -79,7 +79,7 @@ const Round: React.FC = () => {
       <div className="m-auto w-full md:w-auto max-w-lg pb-20">
         <div className="text-center text-xs text-blue-500 font-bold">Question {activeIndex + 1}/25 </div>
         <Questions title={activeQ.question} />
-        <div className="flex flex-col w-full md:w-160 border-2 border-accent-2 rounded-lg">
+        <div className="flex flex-col w-full md:w-160 border-2 border-accent-2 overflow-hidden rounded-lg">
           <Answers options={activeQ.options} score={score} handleScore={handleScore} />
         </div>
         <div className="p-4 fixed left-0 right-0 bottom-0 z-10 bg-primary">
