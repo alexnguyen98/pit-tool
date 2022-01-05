@@ -58,9 +58,9 @@ const Finish: React.FC = () => {
             </div>
           </div>
           {savedQuestions.map((i: QuestionT, index: number) => (
-            <div>
+            <div key={index}>
               <Questions title={i.question} />
-              <div key={index} className="border-2 border-accent-2 rounded-lg mb-5">
+              <div className="border-2 border-accent-2 rounded-lg mb-5">
                 <AnswersResults options={i.options} score={scores[index] ?? []} />
                 <div className="flex justify-center py-2 border-t-2 border-accent-2">
                   <Button onClick={() => handleFrequency(i.id)}>
