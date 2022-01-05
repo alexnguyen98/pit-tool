@@ -1,25 +1,25 @@
 {
-    "title": "KAB - Tool",
-    "description": "Cryptography tool on browser",
+    "title": "PIT - Tool",
+    "description": "PIT quiz tool on browser",
     "openGraph": {
-      "title": "KAB - Tool",
-      "description": "Cryptography tool on browser",
+      "title": "PIT - Tool",
+      "description": "PIT quiz tool on browser",
       "type": "website",
       "locale": "en_IE",
-      "url": "https://kabtool.vercel.app/",
-      "site_name": "KAB - Tool",
+      "url": "https://pit-tool.vercel.app/",
+      "site_name": "PIT - Tool",
       "images": [
         {
           "url": "/icon-512x512.png",
           "width": 800,
           "height": 600,
-          "alt": "Marimos"
+          "alt": "PIT"
         }
       ]
     },
     "twitter": {
-      "handle": "@kabtool",
-      "site": "https://kabtool.vercel.app/",
+      "handle": "@pit-tool",
+      "site": "https://pit-tool.vercel.app/",
       "cardType": "summary_large_image"
     }
   }
