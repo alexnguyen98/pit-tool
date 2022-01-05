@@ -8,7 +8,12 @@ const Settings: React.FC = () => {
   const { maxQuestions, setMaxQuestions } = useGlobalContext();
 
   const handleMax = (e: any) => {
-    setMaxQuestions(e.target.value);
+    const num: number = e.target.value;
+    if (10 < num && num < MAX_QUESTIONS) {
+      alert(`Length cannot be smaller then 10 and bigger then ${MAX_QUESTIONS}!`);
+    } else {
+      setMaxQuestions(num);
+    }
   };
 
   return (
