@@ -1264,6 +1264,22 @@ export const QUESTIONS: QuestionT[] = [
     question: 'Obchodní společností není',
     options: [
       {
+        text: 'veřejná obchodní společnost',
+        correct: false,
+      },
+      {
+        text: 'komanditní společnost',
+        correct: false,
+      },
+      {
+        text: 'akciová společnost',
+        correct: false,
+      },
+      {
+        text: 'společnost s ručením omezeným',
+        correct: false,
+      },
+      {
         text: 'svěřenecký fond',
         correct: true,
       },
