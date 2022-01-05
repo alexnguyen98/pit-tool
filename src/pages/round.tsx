@@ -8,7 +8,17 @@ import { useGlobalContext } from '../context/ManagedContext';
 import { useRouter } from 'next/dist/client/router';
 
 const Round: React.FC = () => {
-  const { activeIndex, finished, scores, savedQuestions, setQuestions, setScore, setActiveIndex, finishGame } = useGlobalContext();
+  const {
+    activeIndex,
+    finished,
+    frequencies,
+    scores,
+    savedQuestions,
+    setQuestions,
+    setScore,
+    setActiveIndex,
+    finishGame,
+  } = useGlobalContext();
   const router = useRouter();
 
   const activeQ = QUESTIONS[activeIndex];
@@ -38,7 +48,11 @@ const Round: React.FC = () => {
     if (finished) {
       router.push('/finish');
     } else if (!finished && isEmpty && !savedQuestions.length) {
-      const shuffled = QUESTIONS.sort(() => 0.5 - Math.random());
+      const shuffled = QUESTIONS.sort(() => 0.5 - Math.random()).sort((a, b) => {
+        const weightA = frequencies.includes(a.id) ? 1 : 0;
+        const weightB = frequencies.includes(b.id) ? 1 : 0;
+        return Math.random() * (weightB + weightA) - weightA;
+      });
       const sliced = shuffled.slice(0, MAX_QUESTIONS);
       sliced.forEach((i) => i.options.sort(() => 0.5 - Math.random()));
       setQuestions(sliced);

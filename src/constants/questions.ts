@@ -4,6 +4,7 @@ export const MAX_QUESTIONS = 25;
 
 export const QUESTIONS: QuestionT[] = [
   {
+    id: 0,
     question: 'O odstoupení z funkce člena orgánu obchodní korporace platí, že',
     options: [
       {
@@ -27,6 +28,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 1,
     question: 'Ústavní soud',
     options: [
       {
@@ -50,6 +52,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 2,
     question: 'Odškodnění duševních útrap je',
     options: [
       {
@@ -71,6 +74,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 3,
     question: 'Všechny předpoklady vzniku škody jsou',
     options: [
       {
@@ -92,6 +96,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 4,
     question: 'Právo spojené s právem duševního vlastnictví je',
     options: [
       {
@@ -113,6 +118,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 5,
     question: 'Základní kapitál obchodní korporace',
     options: [
       {
@@ -134,6 +140,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 6,
     question: 'Základní kapitál u akciové společnosti musí být minimálně',
     options: [
       {
@@ -155,6 +162,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 7,
     question: 'Způsoby náhrady škody jsou',
     options: [
       {
@@ -176,6 +184,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 8,
     question: 'Právo Duševního vlastnictví v současnosti platném zákoně není upraveno v následujícím zákoně',
     options: [
       {
@@ -197,6 +206,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 9,
     question: 'Živností není',
     options: [
       {
@@ -218,6 +228,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 10,
     question: 'Pracovní vztah uzavřený smlouvou na dobu určitou',
     options: [
       {
@@ -239,6 +250,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 11,
     question: 'Návrh na zápis do obchodního rejstříku v akciové společnosti podepisuje',
     options: [
       {
@@ -260,6 +272,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 12,
     question: 'Podle živnostenského zákona je vždy překážkou pro získání živnosti Vyberte jednu z nabízených možností',
     options: [
       {
@@ -281,6 +294,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 13,
     question: 'Podnikatel při jednání a podepisování může ke svému jménu připojit',
     options: [
       {
@@ -302,6 +316,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 14,
     question: 'Pracovní smlouva musí ze zákona obsahovat',
     options: [
       {
@@ -323,6 +338,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 15,
     question: 'Orgány EU jsou',
     options: [
       {
@@ -344,6 +360,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 16,
     question: 'Vynález v ČR, aby mohl být udělen, musí být',
     options: [
       {
@@ -365,6 +382,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 17,
     question: 'Patentové nároky mohou být',
     options: [
       {
@@ -386,6 +404,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 18,
     question: 'Licence na dobu neurčitou má výpovědní dobu',
     options: [
       {
@@ -407,6 +426,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 19,
     question: 'Pramenem práva není',
     options: [
       {
@@ -428,6 +448,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 20,
     question: 'U výhradní licence platí, že',
     options: [
       {
@@ -449,6 +470,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 21,
     question: 'Základní kapitál u společnosti s ručením omezeným musí být minimálně',
     options: [
       {
@@ -470,6 +492,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 22,
     question: 'Společnost se zakládá',
     options: [
       {
@@ -491,6 +514,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 23,
     question: 'Minimální doba trvání ochrany majetkových práv autora autorského díla podle Bernské úmluvy je',
     options: [
       {
@@ -512,6 +536,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 24,
     question: 'Mezi primární právo EU patří',
     options: [
       {
@@ -533,6 +558,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 25,
     question: 'Pro volné živnosti',
     options: [
       {
@@ -554,6 +580,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 26,
     question: 'Právní norma se skládá z',
     options: [
       {
@@ -575,6 +602,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 27,
     question: 'Podnikatel má povinnost vést účetnictví',
     options: [
       {
@@ -597,6 +625,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 28,
     question: 'Pokud zaměstnavatel a zaměstnanec uzavřou pracovní smlouvu ústní formou',
     options: [
       {
@@ -618,6 +647,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 29,
     question: 'Věcná působnost autorského zákona - Autorské dílo - je',
     options: [
       {
@@ -639,6 +669,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 30,
     question: 'Software patent',
     options: [
       {
@@ -660,6 +691,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 31,
     question: 'Vynálezecká činnost podle zákona o vynálezech',
     options: [
       {
@@ -681,6 +713,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 32,
     question: 'Pro obchodní firmu platí',
     options: [
       {
@@ -702,6 +735,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 33,
     question: 'Podle §2106 NOZ, je-li vadné plnění podstatným porušením smlouvy, má kupující právo',
     options: [
       {
@@ -723,6 +757,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 34,
     question: 'Počítačovému programu v EU není možné',
     options: [
       {
@@ -744,6 +779,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 35,
     question: 'Za podnikatele se považuje vždy',
     options: [
       {
@@ -765,6 +801,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 36,
     question: 'Koncesované živnosti se dělí na',
     options: [
       {
@@ -786,6 +823,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 37,
     question: 'Jako užitný vzor nelze chránit',
     options: [
       {
@@ -807,6 +845,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 38,
     question: 'Podnikový vynález',
     options: [
       {
@@ -828,6 +867,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 39,
     question: 'Podle občanského zákoníku je osobou blízkou',
     options: [
       {
@@ -849,6 +889,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 40,
     question: 'Osobní působnost autorského zákona se netýká',
     options: [
       {
@@ -870,6 +911,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 41,
     question: 'Soustavnost podnikání znamená',
     options: [
       {
@@ -891,6 +933,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 42,
     question: 'Účinek patentu představuje',
     options: [
       {
@@ -912,6 +955,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 43,
     question: 'Bernská úmluva upravuje',
     options: [
       {
@@ -933,6 +977,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 44,
     question: 'Průmyslový vzor je',
     options: [
       {
@@ -954,6 +999,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 45,
     question: 'U smlouvy o dílo je cena stanovena',
     options: [
       {
@@ -975,6 +1021,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 46,
     question: 'Litigačním procesem není',
     options: [
       {
@@ -996,6 +1043,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 47,
     question: 'Pro nakladatelskou licenční smlouvu platí, že',
     options: [
       {
@@ -1018,6 +1066,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 48,
     question: 'Licence nemůže být poskytnuta k',
     options: [
       {
@@ -1043,6 +1092,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 49,
     question: 'Promlčení',
     options: [
       {
@@ -1064,6 +1114,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 50,
     question: 'Živností není',
     options: [
       {
@@ -1085,6 +1136,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 51,
     question: 'Mezi všeobecné podmínky pro udělení živnostenského oprávnění patří',
     options: [
       {
@@ -1106,6 +1158,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 52,
     question: 'Minimální doba trvání ochrany majetkových práv autora autorského díla podle Autorského zákona je',
     options: [
       {
@@ -1127,6 +1180,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 53,
     question: 'Vklad',
     options: [
       {
@@ -1148,6 +1202,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 54,
     question: 'Právo duševního vlastnictví obsahuje následující podoblasti',
     options: [
       {
@@ -1169,6 +1224,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 55,
     question: 'Počítačový program je',
     options: [
       {
@@ -1182,6 +1238,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 56,
     question: 'Výpověď bez udání důvodu může předložit',
     options: [
       {
@@ -1203,6 +1260,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 57,
     question: 'Obchodní společností není',
     options: [
       {
@@ -1212,6 +1270,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 58,
     question: 'Účinnost',
     options: [
       {
@@ -1233,6 +1292,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 59,
     question: 'Mezi práva společníka obchodní korporace patří',
     options: [
       {
@@ -1254,6 +1314,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 60,
     question: 'Platnost',
     options: [
       {
@@ -1275,6 +1336,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 61,
     question: 'U Prekluze',
     options: [
       {
@@ -1296,6 +1358,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 62,
     question: 'Princip teritoriality se dá označit tak, že',
     options: [
       {
@@ -1317,6 +1380,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 63,
     question: 'Mezi znaky podnikání ve smyslu občanského zákoníku nepatří',
     options: [
       {
@@ -1338,6 +1402,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 64,
     question:
       'Soukromoprávní vztahy mezinárodního práva soukromého mají vztah k jinému státu. Jde tedy o vztah s mezinárodním prvkem a jedná se o',
     options: [
@@ -1360,6 +1425,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 65,
     question: 'Vyberte jednu z nabízených možností:',
     options: [
       {
@@ -1381,6 +1447,7 @@ export const QUESTIONS: QuestionT[] = [
     ],
   },
   {
+    id: 66,
     question: 'Mezi absolutní majetková práva nepatří',
     options: [
       {

@@ -5,6 +5,7 @@ import { QuestionT, ScoreT } from '../types';
 export interface State {
   finished: boolean;
   activeIndex: number;
+  frequencies: number[];
   savedQuestions: QuestionT[];
   scores: ScoreT;
 }
@@ -12,6 +13,7 @@ export interface State {
 const initialState = {
   finished: false,
   activeIndex: 0,
+  frequencies: [],
   savedQuestions: [],
   scores: {},
 };
@@ -28,6 +30,10 @@ type Action =
   | {
       type: 'SET_SCORE';
       score: ScoreT;
+    }
+  | {
+      type: 'SET_FREQUENCY';
+      frequencies: number[];
     }
   | {
       type: 'SET_ACTIVE_INDEX';
@@ -54,6 +60,11 @@ const reducer = (state: State, action: Action) => {
         ...state,
         savedQuestions: action.questions,
       };
+    case 'SET_FREQUENCY':
+      return {
+        ...state,
+        frequencies: action.frequencies,
+      };
     case 'SET_SCORE':
       return {
         ...state,
@@ -74,6 +85,7 @@ const reducer = (state: State, action: Action) => {
         ...state,
         finished: false,
         activeIndex: 0,
+        frequencies: [],
         savedQuestions: [],
         scores: {},
       };
@@ -97,6 +109,15 @@ const GlobalProvider: React.FC = (props) => {
       dispatch({
         type: 'SET_SAVED_QUESTIONS',
         questions,
+      }),
+    [dispatch]
+  );
+
+  const setFrequencies = useCallback(
+    (frequencies: number[]) =>
+      dispatch({
+        type: 'SET_FREQUENCY',
+        frequencies,
       }),
     [dispatch]
   );
@@ -140,6 +161,7 @@ const GlobalProvider: React.FC = (props) => {
       ...state,
       setData,
       setQuestions,
+      setFrequencies,
       setScore,
       setActiveIndex,
       finishGame,

@@ -5,6 +5,7 @@ export type ScoreT = {
 export type QuestionOptionT = { text: string; correct: boolean }[];
 
 export type QuestionT = {
+  id: number;
   question: string;
   options: QuestionOptionT;
 };
