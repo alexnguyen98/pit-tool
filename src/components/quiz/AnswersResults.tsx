@@ -10,9 +10,9 @@ type Props = {
 const AnswersResults: React.FC<Props> = ({ options, score }) => {
   return (
     <div>
-      <ul>
+      <ul className="divide-y-2 divide-accent-2">
         {options.map((i, index) => (
-          <li key={index} className="text-sm border-t-2 border-accent-2">
+          <li key={index} className="text-sm">
             <div
               className={cn('text-left py-4 px-3 w-full', {
                 'bg-red-100 text-red-900': i.correct && !score.includes(index),

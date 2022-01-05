@@ -54,9 +54,11 @@ const Finish: React.FC = () => {
             </div>
           </div>
           {savedQuestions.map((i: QuestionT, index: number) => (
-            <div key={index} className="border-2 border-accent-2 rounded-lg mb-5">
+            <div>
               <Questions title={i.question} />
-              <AnswersResults options={i.options} score={scores[index] ?? []} />
+              <div key={index} className="border-2 border-accent-2 rounded-lg mb-5">
+                <AnswersResults options={i.options} score={scores[index] ?? []} />
+              </div>
             </div>
           ))}
         </div>

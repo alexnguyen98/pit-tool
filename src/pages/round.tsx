@@ -62,23 +62,27 @@ const Round: React.FC = () => {
 
   return (
     <Layout>
-      <div className="m-auto">
-        <div className="text-center text-xs py-2 text-blue-500 font-bold">Question {activeIndex + 1}/25 </div>
+      <div className="m-auto w-full md:w-auto max-w-lg pb-20">
+        <div className="text-center text-xs text-blue-500 font-bold">Question {activeIndex + 1}/25 </div>
+        <Questions title={activeQ.question} />
         <div className="flex flex-col w-full md:w-160 border-2 border-accent-2 rounded-lg">
-          <Questions title={activeQ.question} />
           <Answers options={activeQ.options} score={score} handleScore={handleScore} />
         </div>
-        <div className="mt-5 mb-20 flex justify-center space-x-5">
-          <Button onClick={handlePrev} disabled={isFirst}>
-            Prev
-          </Button>
-          {isLast ? (
-            <Button onClick={handleFinish} variant="primary">
-              Finish
+        <div className="p-4 fixed left-0 right-0 bottom-0 z-10 bg-primary">
+          <div className="w-full md:w-160 mx-auto flex justify-between">
+            <Button onClick={handlePrev} disabled={isFirst} className="w-32">
+              Prev
             </Button>
-          ) : (
-            <Button onClick={handleNext}>Next</Button>
-          )}
+            {isLast ? (
+              <Button onClick={handleFinish} variant="primary" className="w-32">
+                Finish
+              </Button>
+            ) : (
+              <Button onClick={handleNext} className="w-32">
+                Next
+              </Button>
+            )}
+          </div>
         </div>
       </div>
     </Layout>

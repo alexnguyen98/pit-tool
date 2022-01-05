@@ -11,9 +11,9 @@ type Props = {
 const Answers: React.FC<Props> = ({ options, score, handleScore }) => {
   return (
     <div>
-      <ul>
+      <ul className="divide-y-2 divide-accent-2">
         {options.map((i, index) => (
-          <li key={index} className="text-sm border-t-2 border-accent-2 text-accent-6">
+          <li key={index} className="text-sm text-accent-6">
             <button
               className={cn('text-left py-4 px-3 w-full hover:bg-blue-200', {
                 'bg-blue-100 text-blue-900 font-bold': score.includes(index),

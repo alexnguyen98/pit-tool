@@ -1380,4 +1380,25 @@ export const QUESTIONS: QuestionT[] = [
       },
     ],
   },
+  {
+    question: 'Mezi absolutní majetková práva nepatří',
+    options: [
+      {
+        text: 'držba',
+        correct: false,
+      },
+      {
+        text: 'vlastnictví',
+        correct: false,
+      },
+      {
+        text: 'věcná práva k věci cizí',
+        correct: false,
+      },
+      {
+        text: 'závazky či práva vyplývající ze smluv',
+        correct: true,
+      },
+    ],
+  },
 ];

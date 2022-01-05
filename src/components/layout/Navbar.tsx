@@ -9,7 +9,7 @@ const ThemeToggle = dynamic(() => import('../utils/ThemeToggle'), {
 
 const Navbar: React.FC = () => {
   return (
-    <header className="fixed z-10 top-0 left-0 right-0 bg-primary bg-opacity-75">
+    <header>
       <nav className="px-5 py-3 flex items-center">
         <Link href="/">
           <a className="flex items-center text-blue-700">

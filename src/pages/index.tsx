@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/containers/Layout';
 import Button from '../components/common/Button';
-import Github from '../components/icons/Github';
+import Footer from '../components/layout/Footer';
 
 const Home: React.FC = () => {
   return (
@@ -10,12 +10,7 @@ const Home: React.FC = () => {
         <Button href="/new-round">New Round</Button>
         <Button href="/round">Load Round</Button>
       </div>
-      <footer className="flex justify-center py-3 text-accent-3">
-        <a href="https://github.com/alexnguyen98/pit-tool" className="flex items-center">
-          <Github className="w-4 mr-1 fill-current" />
-          Github
-        </a>
-      </footer>
+      <Footer />
     </Layout>
   );
 };

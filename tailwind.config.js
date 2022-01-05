@@ -1,18 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  future: {
-    purgeLayersByDefault: true,
-    applyComplexClasses: true,
-  },
-  purge: {
-    content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
-    options: {
-      safelist: {
-        standard: ['outline-none'],
-      },
-    },
-  },
+  content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       minWidth: {
