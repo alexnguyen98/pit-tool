@@ -3,7 +3,7 @@ import { useDebounce } from '../../hooks/useDebounce';
 import { useGlobalContext } from '../../context/ManagedContext';
 
 const AutoSave: React.FC = () => {
-  const { setData, finished, activeIndex, savedQuestions, frequencies, scores } = useGlobalContext();
+  const { setData, finished, activeIndex, maxQuestions, savedQuestions, frequencies, scores } = useGlobalContext();
   const debouncedInput = useDebounce(JSON.stringify({ finished, activeIndex, savedQuestions, frequencies, scores }), 1000);
 
   useEffect(() => {
@@ -21,6 +21,7 @@ const AutoSave: React.FC = () => {
       finished,
       activeIndex,
       savedQuestions,
+      maxQuestions,
       frequencies,
       scores,
     });

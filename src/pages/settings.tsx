@@ -15,7 +15,7 @@ const Settings: React.FC = () => {
     <Layout>
       <h1 className="text-3xl text-accent-6 font-bold text-center mb-4">Settings</h1>
       <div className="mx-auto mt-10 w-full md:w-96">
-        <div className="text-sm mb-2">QUESTIONS LENGTH</div>
+        <div className="text-sm mb-2 font-bold">QUESTIONS LENGTH</div>
         <Input className="w-20" type="number" min={10} max={MAX_QUESTIONS} value={maxQuestions} onChange={handleMax} />
       </div>
     </Layout>
