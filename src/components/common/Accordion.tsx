@@ -14,7 +14,7 @@ const Accordion: React.FC<Props> = ({ className, header, children }) => {
   const handleToggle = () => setActive((state) => !state);
 
   return (
-    <div className={cn('py-3 w-full md:w-120 border-2 px-5 rounded-lg', className)}>
+    <div className={cn('py-3 w-full md:w-120 border-2 rounded-lg border-accent-2 px-5', className)}>
       <button onClick={handleToggle} className="flex items-center w-full">
         <Plus className="w-6 mr-3 fill-current" filled={active} />
         <h2 className="text-left text-xl font-bold">{header}</h2>
