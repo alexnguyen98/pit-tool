@@ -15,7 +15,7 @@ const Answers: React.FC<Props> = ({ options, score, handleScore }) => {
         {options.map((i, index) => (
           <li key={index} className="text-sm text-accent-6">
             <button
-              className={cn('text-left py-4 px-3 w-full hover:bg-blue-200', {
+              className={cn('text-left py-4 px-3 w-full md:hover:bg-blue-200', {
                 'bg-blue-100 text-blue-900 font-bold': score.includes(index),
               })}
               onClick={() => handleScore(index)}

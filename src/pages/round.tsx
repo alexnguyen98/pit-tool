@@ -76,7 +76,7 @@ const Round: React.FC = () => {
 
   return (
     <Layout>
-      <div className="mx-auto w-full md:w-auto max-w-lg pt-10 pb-20">
+      <div className="mx-auto w-full md:w-auto max-w-lg pt-5 pb-20">
         <div className="text-center text-xs text-blue-500 font-bold">Question {activeIndex + 1}/25 </div>
         <Questions title={activeQ.question} />
         <div className="flex flex-col w-full md:w-160 border-2 border-accent-2 overflow-hidden rounded-lg">
