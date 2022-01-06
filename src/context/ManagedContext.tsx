@@ -96,7 +96,6 @@ const reducer = (state: State, action: Action) => {
         ...state,
         finished: false,
         activeIndex: 0,
-        frequencies: [],
         savedQuestions: [],
         scores: {},
       };
