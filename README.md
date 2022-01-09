@@ -1,6 +1,6 @@
-# PIT tool
+# Quiz tool
 
-A quiz tool for the subject PIT on CVUT.
+A quiz tool for the subject PIT and KAB on CVUT.
 
 Demo live at: [pit-tool.vercel.app](https://pit-tool.vercel.app/)
 
