@@ -7,7 +7,7 @@ const NewRound: React.FC = () => {
   const router = useRouter();
 
   useEffect(() => {
-    localStorage.removeItem('saved_data_pit');
+    localStorage.removeItem('saved_data_quiz');
     resetStats();
     router.push('/round');
   }, []);

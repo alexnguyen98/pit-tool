@@ -1,29 +1,37 @@
 import React, { useReducer, useMemo, useCallback, useContext, createContext } from 'react';
 import { ThemeProvider } from 'next-themes';
-import { QuestionT, ScoreT } from '../types';
+import { QuestionT, ScoreT, SubjectType } from '../types';
 
 export interface State {
+  loading: boolean;
   finished: boolean;
   maxQuestions: number;
   activeIndex: number;
   frequencies: number[];
   savedQuestions: QuestionT[];
   scores: ScoreT;
+  subjectType: SubjectType;
 }
 
 const initialState = {
+  loading: true,
   finished: false,
   activeIndex: 0,
   maxQuestions: 25,
   frequencies: [],
   savedQuestions: [],
   scores: {},
+  subjectType: SubjectType.PIT,
 };
 
 type Action =
   | {
       type: 'SET_ALL_DATA';
       data: Omit<State, 'output'>;
+    }
+  | {
+      type: 'SET_SUBJECT_TYPE';
+      subjectType: SubjectType;
     }
   | {
       type: 'SET_SAVED_QUESTIONS';
@@ -60,6 +68,11 @@ const reducer = (state: State, action: Action) => {
       return {
         ...state,
         ...action.data,
+      };
+    case 'SET_SUBJECT_TYPE':
+      return {
+        ...state,
+        subjectType: action.subjectType,
       };
     case 'SET_SAVED_QUESTIONS':
       return {
@@ -111,6 +124,15 @@ const GlobalProvider: React.FC = (props) => {
       dispatch({
         type: 'SET_ALL_DATA',
         data,
+      }),
+    [dispatch]
+  );
+
+  const setSubjectType = useCallback(
+    (subjectType: SubjectType) =>
+      dispatch({
+        type: 'SET_SUBJECT_TYPE',
+        subjectType,
       }),
     [dispatch]
   );
@@ -180,6 +202,7 @@ const GlobalProvider: React.FC = (props) => {
     () => ({
       ...state,
       setData,
+      setSubjectType,
       setQuestions,
       setMaxQuestions,
       setFrequencies,

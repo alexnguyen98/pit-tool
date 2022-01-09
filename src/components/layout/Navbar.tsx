@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         <Link href="/">
           <a className="flex items-center text-blue-700">
             <Logo className="w-8 mr-1" />
-            PIT tool
+            Quiz tool
           </a>
         </Link>
         <div className="ml-auto text-sm text-accent-3">

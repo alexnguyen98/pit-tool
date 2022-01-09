@@ -8,7 +8,7 @@ import Questions from '../components/quiz/Questions';
 import AnswersResults from '../components/quiz/AnswersResults';
 
 const Finish: React.FC = () => {
-  const { scores, finished, frequencies, setFrequencies, savedQuestions } = useGlobalContext();
+  const { loading, scores, finished, frequencies, setFrequencies, savedQuestions } = useGlobalContext();
   const router = useRouter();
 
   let correct = 0;
@@ -35,10 +35,12 @@ const Finish: React.FC = () => {
   };
 
   useEffect(() => {
-    if (!finished) {
-      router.push('/');
+    if (!loading && !finished) {
+      router.replace('/');
     }
-  }, []);
+  }, [loading]);
+
+  if (loading) return <div className="text-center mt-2">loading...</div>;
 
   return (
     <Layout>
@@ -59,7 +61,7 @@ const Finish: React.FC = () => {
           </div>
           {savedQuestions.map((i: QuestionT, index: number) => (
             <div key={index}>
-              <Questions title={i.question} />
+              <Questions data={i} />
               <div className="border-2 border-accent-2 rounded-lg overflow-hidden mb-5">
                 <AnswersResults options={i.options} score={scores[index] ?? []} />
                 <div className="flex justify-center py-2 border-t-2 border-accent-2">

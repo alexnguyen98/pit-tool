@@ -1,7 +1,7 @@
 {
-  "name": "KAB-Tool",
-  "short_name": "KAB-Tool",
-  "description": "Cryptography tool on browser",
+  "name": "Quiz-Tool",
+  "short_name": "Quiz-Tool",
+  "description": "Quiz tool for PIT and KAB",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#fff",

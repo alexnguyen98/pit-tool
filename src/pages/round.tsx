@@ -3,12 +3,15 @@ import Layout from '../components/containers/Layout';
 import Button from '../components/common/Button';
 import Answers from '../components/quiz/Answers';
 import Questions from '../components/quiz/Questions';
-import { QUESTIONS } from '../constants/questions';
+import { QUESTIONS_MAP } from '../constants/questions';
 import { useGlobalContext } from '../context/ManagedContext';
 import { useRouter } from 'next/dist/client/router';
+import { SubjectType } from '../types';
 
 const Round: React.FC = () => {
   const {
+    loading,
+    subjectType,
     activeIndex,
     finished,
     frequencies,
@@ -22,10 +25,11 @@ const Round: React.FC = () => {
   } = useGlobalContext();
   const router = useRouter();
 
+  const QUESTIONS = QUESTIONS_MAP[subjectType as SubjectType];
   const activeQ = QUESTIONS[activeIndex];
   const score = scores[activeIndex] ?? [];
   const isFirst = !activeIndex;
-  const isLast = activeIndex === maxQuestions - 1;
+  const isLast = activeIndex === (savedQuestions.length < maxQuestions ? savedQuestions.length : maxQuestions) - 1;
   const isEmpty = !savedQuestions.length;
 
   const handleScore = (index: number) => {
@@ -46,9 +50,9 @@ const Round: React.FC = () => {
   };
 
   useEffect(() => {
-    if (finished) {
-      router.push('/finish');
-    } else if (!finished && isEmpty && !savedQuestions.length) {
+    if (!loading && finished) {
+      router.replace('/finish');
+    } else if (!loading && !finished && isEmpty && !savedQuestions.length) {
       const shuffled = QUESTIONS.sort(() => 0.5 - Math.random()).sort((a, b) => {
         const weightA = frequencies.includes(a.id) ? 1 : 0;
         const weightB = frequencies.includes(b.id) ? 1 : 0;
@@ -58,7 +62,7 @@ const Round: React.FC = () => {
       sliced.forEach((i) => i.options.sort(() => 0.5 - Math.random()));
       setQuestions(sliced);
     }
-  }, []);
+  }, [loading]);
 
   useEffect(() => {
     const handleKey = (event: KeyboardEvent) => {
@@ -73,7 +77,7 @@ const Round: React.FC = () => {
     return () => document.removeEventListener('keyup', handleKey);
   }, [isFirst, isLast, activeIndex]);
 
-  if (isEmpty) return <div className="text-center mt-2">loading...</div>;
+  if (loading || isEmpty) return <div className="text-center mt-2">loading...</div>;
 
   return (
     <Layout>
@@ -81,7 +85,7 @@ const Round: React.FC = () => {
         <div className="text-center text-xs text-blue-500 font-bold">
           Question {activeIndex + 1}/{maxQuestions}{' '}
         </div>
-        <Questions title={activeQ.question} />
+        <Questions data={activeQ} />
         <div className="flex flex-col w-full md:w-160 border-2 border-accent-2 overflow-hidden rounded-lg">
           <Answers options={activeQ.options} score={score} handleScore={handleScore} />
         </div>
