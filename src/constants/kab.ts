@@ -536,4 +536,344 @@ export const KAB_QUESTIONS: QuestionT[] = [
       },
     ],
   },
+  {
+    id: 59,
+    subject: SubjectType.KAB,
+    question: 'Algoritmus RSA lze použít k',
+    img: null,
+    options: [
+      {
+        text: 'pouze podepisování',
+        correct: false,
+      },
+      {
+        text: 'šifrování a podepisování',
+        correct: true,
+      },
+      {
+        text: 'pouze šifrování',
+        correct: false,
+      },
+      {
+        text: 'šifrování, podepisování a výměně klíčů',
+        correct: false,
+      },
+      {
+        text: 'výměně klíčů a šifrování',
+        correct: false,
+      },
+      {
+        text: 'pouze výměně klíčů',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 60,
+    subject: SubjectType.KAB,
+    question: 'Protokol CCSP (Change Cipher Specification Protocol) má u TLS 1.0 na starosti',
+    img: null,
+    options: [
+      {
+        text: 'výměnu klíčů',
+        correct: false,
+      },
+      {
+        text: 'kompresi přenášených dat',
+        correct: false,
+      },
+      {
+        text: 'ohlášení změny používaných algoritmů a klíčů',
+        correct: true,
+      },
+      {
+        text: 'šifrování přenášených dat',
+        correct: false,
+      },
+      {
+        text: 'dojednání šifrovacích algoritmů',
+        correct: false,
+      },
+      {
+        text: 'hlášení chyb',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 61,
+    subject: SubjectType.KAB,
+    question: 'Protokol IKE zajišťuje',
+    img: null,
+    options: [
+      {
+        text: 'šifrování uživatelských dat',
+        correct: false,
+      },
+      {
+        text: 'ochranu proti replay útokům',
+        correct: false,
+      },
+      {
+        text: 'autentizaci přenášených dat',
+        correct: false,
+      },
+      {
+        text: 'se dnes již nepoužívá',
+        correct: false,
+      },
+      {
+        text: 'výměnu klíčů pro protokoly AH a ESP',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 62,
+    subject: SubjectType.KAB,
+    question: 'Diffie-Hellmanův algoritmus lze použít k',
+    img: null,
+    options: [
+      {
+        text: 'a.	šifrování',
+        correct: false,
+      },
+      {
+        text: 'b.	výměně klíčů',
+        correct: true,
+      },
+      {
+        text: 'c.	šifrování, podepisování a výměně klíčů',
+        correct: false,
+      },
+      {
+        text: 'd.	šifrování a podepisování',
+        correct: false,
+      },
+      {
+        text: 'e.	podepisování',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 63,
+    subject: SubjectType.KAB,
+    question: 'Která tvrzení jsou pravdivá o protokolu CHAP',
+    img: null,
+    options: [
+      {
+        text: 'autentizace může probíhat kdykoliv během spojení',
+        correct: true,
+      },
+      {
+        text: 'autentizace zahajuje server',
+        correct: true,
+      },
+      {
+        text: 'autentizace zahajuje klient',
+        correct: false,
+      },
+      {
+        text: 'jedná se o protokol typu výzva-odpověd',
+        correct: true,
+      },
+      {
+        text: 'heslo se přenáší v otevřeném tvaru',
+        correct: false,
+      },
+      {
+        text: 'autentizace probíhá pouze na počátku spojení',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 64,
+    subject: SubjectType.KAB,
+    question: 'Kerberos je',
+    img: null,
+    options: [
+      {
+        text: 'aplikace pro elektronický podpis',
+        correct: false,
+      },
+      {
+        text: 'steganografický systém',
+        correct: false,
+      },
+      {
+        text: 'kryptografické API ve Windows 7',
+        correct: false,
+      },
+      {
+        text: 'program pro prolomení protokolu WEP',
+        correct: false,
+      },
+      {
+        text: 'síťový autentizační systém',
+        correct: true,
+      },
+      {
+        text: 'aplikace pro odposlech zabezpečené komunikace',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 65,
+    subject: SubjectType.KAB,
+    question: 'Nepopiratelnost',
+    img: null,
+    options: [
+      {
+        text: 'je zajištěno šifrovacími kryptografickými algoritmy',
+        correct: false,
+      },
+      {
+        text: 'je proces ověření identity entity (člověk, program, systém)',
+        correct: false,
+      },
+      {
+        text: 'je stav, kdy subjekt nemůže důvěryhodně popřít své minulé požadavky nebo činy',
+        correct: true,
+      },
+      {
+        text: 'je zajištění stavu, kdy je informace dosažitelná pouze autorizovaným subjektům',
+        correct: false,
+      },
+      {
+        text: 'má dvě různé formy: verifikaci a identifikaci',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 66,
+    subject: SubjectType.KAB,
+    question: 'Algoritmus Whirlpool je',
+    img: null,
+    options: [
+      {
+        text: 'symetrická bloková šifra',
+        correct: false,
+      },
+      {
+        text: 'autentizační protokol',
+        correct: false,
+      },
+      {
+        text: 'hashovací funkce',
+        correct: true,
+      },
+      {
+        text: 'autorizační protokol',
+        correct: false,
+      },
+      {
+        text: 'standardizovaná procedura el. podpisu',
+        correct: false,
+      },
+      {
+        text: 'jiná správná odpověď',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 67,
+    subject: SubjectType.KAB,
+    question: 'Protokol RLP (Record Layer Protocol) má u SSL/TLS na starosti',
+    img: null,
+    options: [
+      {
+        text: 'kompresi přenášených dat',
+        correct: true,
+      },
+      {
+        text: 'šifrování přenášených dat',
+        correct: true,
+      },
+      {
+        text: 'dojednání šifrovacích algoritmů',
+        correct: false,
+      },
+      {
+        text: 'hlášení chyb',
+        correct: false,
+      },
+      {
+        text: 'ohlášení změny používaných algoritmů a klíčů',
+        correct: false,
+      },
+      {
+        text: 'výměnu klíčů',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 68,
+    subject: SubjectType.KAB,
+    question: 'Protokol RLP (record Layer Protocol) neřeší',
+    img: null,
+    options: [
+      {
+        text: 'ohlášení změny používaných algoritmů a klíčů',
+        correct: true,
+      },
+      {
+        text: 'výměnu klíčů',
+        correct: true,
+      },
+      {
+        text: 'hlášení chyb',
+        correct: true,
+      },
+      {
+        text: 'dojednání šifrovacích algoritmů',
+        correct: true,
+      },
+      {
+        text: 'kompresi přenášených dat',
+        correct: false,
+      },
+      {
+        text: 'šifrování přenášených dat',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 69,
+    subject: SubjectType.KAB,
+    question: 'Která tvrzení jsou pravdivá o protokolu PAP (Password authentication protocol)',
+    img: null,
+    options: [
+      {
+        text: 'autentizace může probíhat kdykoliv během spojení',
+        correct: false,
+      },
+      {
+        text: 'autentizace zahajuje server',
+        correct: false,
+      },
+      {
+        text: 'autentizace zahajuje klient',
+        correct: true,
+      },
+      {
+        text: 'jedná se o protokol typu výzva-odpověď',
+        correct: false,
+      },
+      {
+        text: 'heslo se přenáší v otevřeném tvaru',
+        correct: true,
+      },
+      {
+        text: 'autentizace probíhá pouze na počátku spojení',
+        correct: true,
+      },
+    ],
+  },
 ];
