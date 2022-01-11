@@ -893,8 +893,12 @@ export const KAB_QUESTIONS: QuestionT[] = [
         correct: false,
       },
       {
-        text: 'Serpent  ',
+        text: 'DES ',
         correct: true,
+      },
+      {
+        text: 'Serpent  ',
+        correct: false,
       },
       {
         text: 'A5 ',
@@ -1263,7 +1267,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
       },
       {
         text: 'Blowfish  ',
-        correct: true,
+        correct: false,
       },
       {
         text: 'DES  ',
@@ -2043,7 +2047,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
       },
       {
         text: 'autorizace  ',
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -2180,6 +2184,745 @@ export const KAB_QUESTIONS: QuestionT[] = [
       {
         text: 'možnost realizace cut-and-paste útoku ',
         correct: true,
+      },
+    ],
+  },
+  {
+    id: 76,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Bezpečnost algoritmu DSA (Digital Signature Algorithm) je založena na obtížnosti řešení problému:',
+    img: null,
+    options: [
+      {
+        text: 'NSA ',
+        correct: false,
+      },
+      {
+        text: 'IFP ',
+        correct: false,
+      },
+      {
+        text: 'DLP ',
+        correct: true,
+      },
+      {
+        text: 'RSA ',
+        correct: false,
+      },
+      {
+        text: 'ECDH ',
+        correct: false,
+      },
+      {
+        text: 'ECDLP ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 77,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Který z následujících režimů činnosti se používá pro autentizaci zpráv? ',
+    img: null,
+    options: [
+      {
+        text: 'ECB  ',
+        correct: false,
+      },
+      {
+        text: 'OFB  ',
+        correct: false,
+      },
+      {
+        text: 'CRT  ',
+        correct: false,
+      },
+      {
+        text: 'žádný  ',
+        correct: true,
+      },
+      {
+        text: 'CBC ',
+        correct: false,
+      },
+      {
+        text: 'CFB ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 78,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Kryptoanalýza ',
+    img: null,
+    options: [
+      {
+        text: 'se zabývá metodami získávání otevřeného textu z textu šifrového bez znalosti klíče   ',
+        correct: true,
+      },
+      {
+        text: 'není ani jedna z uvedených možností ',
+        correct: false,
+      },
+      {
+        text: 'zkoumá odolnost a zranitelnost kryptosystémů ',
+        correct: true,
+      },
+      {
+        text: 'je návrh a konstrukce kryptografických algoritmů a způsoby jejich využívání   ',
+        correct: false,
+      },
+      {
+        text: 'je vědní obor zahrnující kryptografii a kryptoanalýzu  ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 79,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'O jaký typ útoku se jedná, pokud má útočník k dispozici: ŠT, šifrovací algoritmus, jeden nebo více párů OT-ŠT svázaných klíčem K ',
+    img: null,
+    options: [
+      {
+        text: 'útok se znalostí vybraných OT a ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí adaptivních vybraných OT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných OT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí ŠT a OT ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 80,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'Prozkoumejte obrázek a rozhodněte o tom, kde jsou uloženy informace o tom, který algoritmus a klíč se má použít pro zabezpečení konkrétního spojení u protokolu IPsec. ',
+    img: '/img/kab-8.png',
+    options: [
+      {
+        text: 'B',
+        correct: false,
+      },
+      {
+        text: 'D',
+        correct: false,
+      },
+      {
+        text: 'C',
+        correct: false,
+      },
+      {
+        text: 'A',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 81,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Jaký je nejbezpečnější způsob zajištění integrity u protokolu WPA2 (IEEE 802.11i)? ',
+    img: null,
+    options: [
+      {
+        text: 'pomocí protokolu AES-CCMP ',
+        correct: true,
+      },
+      {
+        text: 'pomocí CRC32 ',
+        correct: false,
+      },
+      {
+        text: 'pomocí algoritmu MIC ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu TKIP ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu EAP-ECB ',
+        correct: false,
+      },
+      {
+        text: 'pomocí CRC64 ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 82,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Co mají AES a DES společné? ',
+    img: null,
+    options: [
+      {
+        text: 'oba algoritmy je možné v režimu OFB provozovat jako proudovou šifru ',
+        correct: true,
+      },
+      {
+        text: 'oba algoritmy mají 16 rund ',
+        correct: false,
+      },
+      {
+        text: 'oba algoritmy jsou odolné proti lineární kryptoanalýze ',
+        correct: false,
+      },
+      {
+        text: 'oba algoritmy jsou blokové šifry ',
+        correct: true,
+      },
+      {
+        text: 'oba algoritmy jsou šifry Feistelova typu ',
+        correct: false,
+      },
+      {
+        text: 'nemají společného nic ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 83,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Algoritmus ECDH nelze použít k (zvolte nejvýstižnější odpověď): ',
+    img: null,
+    options: [
+      {
+        text: 'výměně klíčů ',
+        correct: false,
+      },
+      {
+        text: 'šifrování, podepisování a výměně klíčů ',
+        correct: false,
+      },
+      {
+        text: 'šifrování ',
+        correct: false,
+      },
+      {
+        text: 'podepisování ',
+        correct: false,
+      },
+      {
+        text: 'šifrování a podepisování ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 84,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'O jaký typ útoku se jedná, pokud má útočník k dispozici: ŠT, šifrovací algoritmus ',
+    img: null,
+    options: [
+      {
+        text: 'útok se znalostí ŠT ',
+        correct: true,
+      },
+      {
+        text: 'útok se znalostí ŠT a OT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných OT a ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných PT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí adaptivních vybraných OT ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 85,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'O jaký typ útoku se jedná, pokud má útočník k dispozici: Šifrovací algoritmus, kryptoanalytikem vybrané OT spolu s odpovídajícími zašifrovanými ŠT, údajné ŠT zvolené kryptoanalytikem a k nim příslušející dešifrované OT ',
+    img: null,
+    options: [
+      {
+        text: 'útok se znalostí vybraných OT a ŠT ',
+        correct: true,
+      },
+      {
+        text: 'útok se znalostí vybraných ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí adaptivních vybraných OT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných OT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí ŠT a OT ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 86,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Vernamova šifra je absolutně bezpečná, protože: ',
+    img: null,
+    options: [
+      {
+        text: 'je založena na problému GCP (Chorionic Gonadotropic Probability), který nelze řešit ani kvantovým počítačem ',
+        correct: false,
+      },
+      {
+        text: 'její jednotkový odstup je větší než délka ŠT ',
+        correct: true,
+      },
+      {
+        text: 'klíč musí být generován v certifikovaném SW na zabezpečeném počítači ',
+        correct: false,
+      },
+      {
+        text: 'obtížnost jejího prolomení leží ve třídě složitosti BQP (Bounded Quantum Polynomial) ',
+        correct: false,
+      },
+      {
+        text: 'ji vymysleli v Rusku ',
+        correct: false,
+      },
+      {
+        text: 'i v případě dešifrování, kdy vzniklý OT dává smysl, se nemusí jednat o jediný možný smysluplný text ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 87,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'V každé rundě AES se odehrávají následující operace: ',
+    img: null,
+    options: [
+      {
+        text: 'AddRoundKey ',
+        correct: true,
+      },
+      {
+        text: 'MultiplyConstant ',
+        correct: false,
+      },
+      {
+        text: 'SubBytes ',
+        correct: true,
+      },
+      {
+        text: 'RandomKeyMix ',
+        correct: false,
+      },
+      {
+        text: 'MixColumns ',
+        correct: true,
+      },
+      {
+        text: 'ShiftRow ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 88,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Mezi nejpoužívanější proudové šifry patří algoritmy RC4 a A5. Která tvrzení jsou pravdivá? ',
+    img: null,
+    options: [
+      {
+        text: 'RC4 vygeneruje v jednom kroku 1 bit proudu klíče  ',
+        correct: false,
+      },
+      {
+        text: 'A5 vygeneruje v každém kroku 1 bit proudu klíče  ',
+        correct: true,
+      },
+      {
+        text: 'A5 vygeneruje v každém kroku 3 bity proudu klíče  ',
+        correct: false,
+      },
+      {
+        text: 'A5 vygeneruje v každém kroku 8 bitů proudu klíče  ',
+        correct: false,
+      },
+      {
+        text: 'RC4 vygeneruje v jednom kroku 128 bitů proudu klíče  ',
+        correct: false,
+      },
+      {
+        text: 'A5 vygeneruje v každém kroku 128 bitů proudu klíče  ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 89,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Kerchhoffův princip ',
+    img: null,
+    options: [
+      {
+        text: 'již dnes neplatí  ',
+        correct: false,
+      },
+      {
+        text: 'lze obejít pomocí kvantových počítačů ',
+        correct: false,
+      },
+      {
+        text: 'platí pouze pro symetrické algoritmy ',
+        correct: false,
+      },
+      {
+        text: 'platí dodnes  ',
+        correct: true,
+      },
+      {
+        text: 'platí pouze pro asymetrické algoritmy ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 90,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Steganografie je ',
+    img: null,
+    options: [
+      {
+        text: 'vlastnost systému, kdy subjekt nemůže důvěryhodně popřít své minulé požadavky nebo činy  ',
+        correct: false,
+      },
+      {
+        text: 'vědní obor zahrnující kryptografii a kryptoanalýzu  ',
+        correct: false,
+      },
+      {
+        text: 'schopnost systému chránit přístup k systémovým zdrojům  ',
+        correct: false,
+      },
+      {
+        text: 'návrh a konstrukce kryptografických algoritmů a způsoby jejich využívání  ',
+        correct: false,
+      },
+      {
+        text: 'věda o skrývání existence zprávy a nikoliv nutně obsahu vlastní zprávy  ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 91,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Jedním ze základních bloků hashovací funkce je kompresní funkce. Kompresní funkci obvykle realizujeme pomocí: ',
+    img: null,
+    options: [
+      {
+        text: 'generátory náhodných posloupností ',
+        correct: false,
+      },
+      {
+        text: 'proudové šifry  ',
+        correct: false,
+      },
+      {
+        text: 'blokové šifry ',
+        correct: true,
+      },
+      {
+        text: 'nelineární booleovské funkce ',
+        correct: true,
+      },
+      {
+        text: 'HMAC  ',
+        correct: false,
+      },
+      {
+        text: 'CMAC ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 92,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Šifrování asymetrickým algoritmem je v porovnání se symetrickým: ',
+    img: null,
+    options: [
+      {
+        text: 'srovnatelně rychlé',
+        correct: false,
+      },
+      {
+        text: 'přibližně 100x rychlejší',
+        correct: false,
+      },
+      {
+        text: 'Asymetrické a sym. kryptosystémy nelze z tohoto hlediska srovnávat',
+        correct: false,
+      },
+      {
+        text: 'přibližně dvakrát rychlejší',
+        correct: false,
+      },
+      {
+        text: 'přibližně 100x pomalejší',
+        correct: true,
+      },
+      {
+        text: 'přibližně dvakrát pomalejší',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 93,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Certifikát standardu X.509v3 obsahuje ',
+    img: null,
+    options: [
+      {
+        text: 'Privátní klíč certifikační autority ',
+        correct: false,
+      },
+      {
+        text: 'Veřejný klíč majitele certifikátu ',
+        correct: true,
+      },
+      {
+        text: 'Privátní klíč majitele certifikátu ',
+        correct: false,
+      },
+      {
+        text: 'Datum a čas platnosti certifikátu ',
+        correct: true,
+      },
+      {
+        text: 'Veřejný klíč certifikační autority ',
+        correct: false,
+      },
+      {
+        text: 'Ani jednu z uvedených položek neobsahuje ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 94,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Ve kterých případech je vhodné použít pro vytvoření VPN technologii SSL/TLS? ',
+    img: null,
+    options: [
+      {
+        text: 'když chceme zrealizovat remote-access VPN ',
+        correct: true,
+      },
+      {
+        text: 'když postačuje nižší úroveň zabezpečení přenosu uživatelského jména/hesla ',
+        correct: false,
+      },
+      {
+        text: 'když potřebujeme tunelovat aplikační protokoly používající UDP ',
+        correct: false,
+      },
+      {
+        text: 'když chceme zrealizovat site-to-site VPN ',
+        correct: false,
+      },
+      {
+        text: 'když se uživatel připojuje z různých sítí, které nejsou pod naší správou ',
+        correct: true,
+      },
+      {
+        text: 'když jde o permanentní připojení z jedné lokality ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 95,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Které výroky o protokolech DTLS a SSL jsou pravdivé? ',
+    img: null,
+    options: [
+      {
+        text: 'používají stejný transportní protokol ',
+        correct: false,
+      },
+      {
+        text: 'k odvození klíčů používají hashovací funkce MD5 a SHA-1 ',
+        correct: false,
+      },
+      {
+        text: 'jsou standardizovány v dokumentech RFC ',
+        correct: true,
+      },
+      {
+        text: 'jejich součástí je "Alert Protocol" ',
+        correct: false,
+      },
+      {
+        text: 'podporují eliptické kryptosystémy (např. ECDH) ',
+        correct: true,
+      },
+      {
+        text: 'na odvození klíčů se podílí obě komunikující strany ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 96,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Která tvrzení o "DHCP snoopingu" jsou pravdivá: ',
+    img: null,
+    options: [
+      {
+        text:
+          'je to útok, kdy útočník vytvoří falešný DHCP server, kterým může klientům vnutit špatné síťové parametry (např. jinou výchozí bránu) ',
+        correct: false,
+      },
+      {
+        text: 'je ochrana proti útoku MAC flooding ',
+        correct: false,
+      },
+      {
+        text: 'nastavuje se na směrovačích ',
+        correct: false,
+      },
+      {
+        text: 'je útok realizovatelný pouze v bezdrátových sítích ',
+        correct: false,
+      },
+      {
+        text: 'nastavuje se na přepínačích ',
+        correct: true,
+      },
+      {
+        text: 'je to metoda obrany proti DHCP spoofingu  ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 97,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Které výroky o PGP certifikátech a X.509 certifikátech jsou pravdivé ',
+    img: null,
+    options: [
+      {
+        text: 'U PGP neobsahují certifikáty žádný podpis ',
+        correct: false,
+      },
+      {
+        text: 'PGP certifikát může obsahovat více podpisů ',
+        correct: true,
+      },
+      {
+        text: 'X.509 certifikáty nemají žádnou centrální autoritu  ',
+        correct: false,
+      },
+      {
+        text: 'U PGP si uživatelé podepisují vzájemně své certifikáty ',
+        correct: true,
+      },
+      {
+        text: 'PGP certifikáty nemají žádnou centrální autoritu  ',
+        correct: true,
+      },
+      {
+        text: 'X.509 certifikát může obsahovat více podpisů  ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 98,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Kdo se účastní 4-way handshaku? ',
+    img: null,
+    options: [
+      {
+        text: 'autentizátor ',
+        correct: true,
+      },
+      {
+        text: 'certifikační autorita ',
+        correct: false,
+      },
+      {
+        text: 'proxy server ',
+        correct: false,
+      },
+      {
+        text: 'suplikant ',
+        correct: true,
+      },
+      {
+        text: 'autentizační server ',
+        correct: false,
+      },
+      {
+        text: 'směrovač ',
+        correct: false,
       },
     ],
   },
