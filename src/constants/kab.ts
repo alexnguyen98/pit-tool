@@ -1,10 +1,11 @@
-import { QuestionT, SubjectType } from '../types';
+import { QuestionT, SubjectType, QuestionType } from '../types';
 
 export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 0,
     subject: SubjectType.KAB,
-    question: null,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je znázorněna vnitřní struktura jedné blokové šifry. O jaký algoritmus se jedná? ',
     img: '/img/kab-1.png',
     options: [
       {
@@ -36,6 +37,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 1,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question:
       'Základem asymetrických kryptosystémů je těžký matematický problém. Do této kategorie problémů nepatří a ke konstrukci kryptosystémů nelze použít:',
     img: null,
@@ -58,14 +60,15 @@ export const KAB_QUESTIONS: QuestionT[] = [
       },
       {
         text: 'problém diskrétního logaritmu',
-        correct: true,
+        correct: false,
       },
     ],
   },
   {
     id: 2,
     subject: SubjectType.KAB,
-    question: null,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je znázorněn',
     img: '/img/kab-2.png',
     options: [
       {
@@ -97,6 +100,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 3,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Které(-á) z následujících tvrzení o třídách P a NP jsou pravdivá:',
     img: null,
     options: [
@@ -129,6 +133,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 4,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Výhodou režimu ECB je:',
     img: null,
     options: [
@@ -161,6 +166,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 5,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Proces ověření oprávnění přístupu k systémovým zdrojům lze označit slovem:',
     img: null,
     options: [
@@ -197,6 +203,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 6,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Ukončit platnost certifikátu X.509 před dosažením data v poli "Not After" lze',
     img: null,
     options: [
@@ -229,6 +236,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 7,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Kryptologie',
     img: null,
     options: [
@@ -257,6 +265,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 8,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Která operace v rámci jedné rundy je z hlediska bezpečnosti DESu nejdůležitější?',
     img: null,
     options: [
@@ -289,6 +298,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 9,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question:
       'Mějme funkci T(n) = 4n^3 + 175n^2 + 2^n + 10n + 99999999, která popisuje časovou složitost řešení nějakého problému. Vyberte ekvivalentní zápis časové složitosti této funkce pomocí O notace (shora neostře ohraničená).',
     img: null,
@@ -322,6 +332,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 10,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question:
       'Mějme funkci T(n) = 15n3 + 175n^2 + 20n + 100000, která popisuje časovou složitost řešení nějakého problému. Vyberte ekvivalentní zápis časové složitosti této funkce pomocí O notace (shora neostře ohraničená).',
     img: null,
@@ -355,6 +366,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 11,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Elektronicky podepsat lze',
     img: null,
     options: [
@@ -383,6 +395,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 12,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Kryptografie',
     img: null,
     options: [
@@ -411,6 +424,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 13,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Šifrování hovorů v GSM se děje pomocí algoritmu',
     img: null,
     options: [
@@ -443,6 +457,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 14,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Operace SubBytes plní v algoritmu AES stejnou roli, jako blok <ZVOLTE> v algoritmu DES',
     img: null,
     options: [
@@ -475,6 +490,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 15,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Šifrování symetrickým algoritmem je v porovnání se asymetrickým:',
     img: null,
     options: [
@@ -507,6 +523,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 16,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Vernamova šifra',
     img: null,
     options: [
@@ -537,33 +554,1106 @@ export const KAB_QUESTIONS: QuestionT[] = [
     ],
   },
   {
-    id: 59,
+    id: 19,
     subject: SubjectType.KAB,
-    question: 'Algoritmus RSA lze použít k',
+    type: QuestionType.QUESTION,
+    question:
+      'O jaký typ útoku se jedná, pokud má útočník k dispozici: ŠT, šifrovací algoritmus, kryptoanalytikem vybrané OT spolu s odpovídajícími zašifrovanými ŠT ',
     img: null,
     options: [
       {
-        text: 'pouze podepisování',
+        text: 'útok se znalostí vybraných OT a ŠT ',
         correct: false,
       },
       {
-        text: 'šifrování a podepisování',
+        text: 'útok se znalostí vybraných ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí adaptivních vybraných OT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných OT ',
         correct: true,
       },
       {
-        text: 'pouze šifrování',
+        text: 'útok se znalostí ŠT a OT ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 20,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Algoritmus DSA lze použít k: ',
+    img: null,
+    options: [
+      {
+        text: 'šifrování ',
         correct: false,
       },
       {
-        text: 'šifrování, podepisování a výměně klíčů',
+        text: 'výměně klíčů',
         correct: false,
       },
       {
-        text: 'výměně klíčů a šifrování',
+        text: 'podepisování ',
+        correct: true,
+      },
+      {
+        text: 'šifrování a podepisování ',
         correct: false,
       },
       {
-        text: 'pouze výměně klíčů',
+        text: 'šifrování, podepisování a výměně klíčů ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 21,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Které operace v DESu jsou z hlediska důležitosti nejméně důležité?',
+    img: null,
+    options: [
+      {
+        text: 'permutace P-boxu ',
+        correct: false,
+      },
+      {
+        text: 'počáteční permutace - IP ',
+        correct: true,
+      },
+      {
+        text: 'všechny operace jsou stejně důležité ',
+        correct: false,
+      },
+      {
+        text: 'koncová permutace - IP^-1 ',
+        correct: true,
+      },
+      {
+        text: 'substituce v S-boxu ',
+        correct: false,
+      },
+      {
+        text: 'prohození levé a pravé poloviny bloku po skončení poslední rundy ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 22,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Mezi postranní kanály využívané v kryptoanalýze nepatří: ',
+    img: null,
+    options: [
+      {
+        text: 'Časová analýza (Timing analysis) ',
+        correct: false,
+      },
+      {
+        text: 'Elektromagnetická analýza (Radiation monitoring) ',
+        correct: false,
+      },
+      {
+        text: 'Sociální inženýrství (Social engineering) ',
+        correct: true,
+      },
+      {
+        text: 'Analýza chyb (Fault analysis) ',
+        correct: false,
+      },
+      {
+        text: 'Odběrová analýza (Power monitoring) ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 23,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je znázorněna: ',
+    img: '/img/kab-3.png',
+    options: [
+      {
+        text: 'proudová šifra E0 ',
+        correct: false,
+      },
+      {
+        text: 'bloková šifra AES ',
+        correct: false,
+      },
+      {
+        text: 'hashovací funkce SHA-1',
+        correct: false,
+      },
+      {
+        text: 'bloková šifra RC6 ',
+        correct: false,
+      },
+      {
+        text: 'proudová šifra A5 ',
+        correct: true,
+      },
+      {
+        text: 'bloková šifra A8 ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 24,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Algoritmus znázorněný na obrázku v každém kroku vygeneruje: ',
+    img: '/img/kab-3.png',
+    options: [
+      {
+        text: '3 bity proudu klíče ',
+        correct: false,
+      },
+      {
+        text: '3 bajty proudu klíče ',
+        correct: false,
+      },
+      {
+        text: '2 bity proudu klíče ',
+        correct: false,
+      },
+      {
+        text: '128 bitů proudu klíče ',
+        correct: false,
+      },
+      {
+        text: '1 bajt proudu klíče ',
+        correct: false,
+      },
+      {
+        text: '1 bit proudu klíče ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 25,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Doporučení IEEE 802.1x se v praxi využívá: ',
+    img: null,
+    options: [
+      {
+        text: 'jako autentizační mechanismus v bezdrátových sítích standardu IEEE 802.11 ',
+        correct: true,
+      },
+      {
+        text: 'v lokáních sítích realizovaných technologií ADSL ',
+        correct: false,
+      },
+      {
+        text: 'v mobilních sítích 2. generace pro autentizaci účastníků ',
+        correct: false,
+      },
+      {
+        text: 'jiná správná odpověď ',
+        correct: false,
+      },
+      {
+        text: 'v mobilních sítích 3. generace pro šifrování hovorů ',
+        correct: false,
+      },
+      {
+        text: 'jako AAA protokol v bezdrátových sítích IEEE 802.16 ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 26,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Alice digitálně podepisuje zprávu pro Boba. Podpis provede: ',
+    img: null,
+    options: [
+      {
+        text: 'předložením otisku zprávy certifikační autoritě, která vytvoří digitální podpis ',
+        correct: false,
+      },
+      {
+        text: 'zašifrováním otisku zprávy privátním klíčem Alice ',
+        correct: true,
+      },
+      {
+        text: 'zašifrováním celé zprávy veřejným klíčem Alice ',
+        correct: false,
+      },
+      {
+        text: 'zašifrováním otisku zprávy veřejným klíčem Boba ',
+        correct: false,
+      },
+      {
+        text: 'zašifrováním otisku zprávy privátním klíčem Boba ',
+        correct: false,
+      },
+      {
+        text: 'předložením celé zprávy certifikační autoritě, která vytvoří digitální podpis ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 27,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'Co, a jak se autentizuje při přihlášení mobilního telefonu do GSM sítě? Pro zjednodušení si pod pojmem GSM síť představte všechny páteřní subsystémy, které tvoří jádro sítě (např. HLR/VLR, MSC, AuC). ',
+    img: null,
+    options: [
+      {
+        text: 'SIM karta vůči GSM síti ',
+        correct: true,
+      },
+      {
+        text: 'mobilní stanice (telefon) vůči GSM síti ',
+        correct: false,
+      },
+      {
+        text: 'GSM síť vůči mobilní stanici (telefonu) ',
+        correct: false,
+      },
+      {
+        text: 'GSM síť vůči SIM kartě ',
+        correct: false,
+      },
+      {
+        text: 'účastník vůči GSM síti ',
+        correct: false,
+      },
+      {
+        text: 'GSM síť vůči účastníkovi ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 28,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je znázorněn ',
+    img: '/img/kab-4.png',
+    options: [
+      {
+        text: 'model Diffie-Hellmanova algoritmu ',
+        correct: false,
+      },
+      {
+        text: 'model proudové šifry ',
+        correct: false,
+      },
+      {
+        text: 'obecný tvar Feistelovy šifry ',
+        correct: true,
+      },
+      {
+        text: 'model RSA ',
+        correct: false,
+      },
+      {
+        text: 'jedna runda algoritmu AES ',
+        correct: false,
+      },
+      {
+        text: 'model elektronického podpisu ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 29,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je znázorněna vnitřní struktura jedné blokové šifry. O jaký algoritmus se jedná ?',
+    img: '/img/kab-5.png',
+    options: [
+      {
+        text: 'AES ',
+        correct: false,
+      },
+      {
+        text: 'RC4 ',
+        correct: false,
+      },
+      {
+        text: 'Serpent  ',
+        correct: true,
+      },
+      {
+        text: 'A5 ',
+        correct: false,
+      },
+      {
+        text: 'RC6 ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 30,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je znázorněna vnitřní struktura jedné blokové šifry. O jaký algoritmus se jedná ? ',
+    img: '/img/kab-6.png',
+    options: [
+      {
+        text: 'AES ',
+        correct: false,
+      },
+      {
+        text: 'DES  ',
+        correct: false,
+      },
+      {
+        text: 'Serpent  ',
+        correct: false,
+      },
+      {
+        text: 'RC6  ',
+        correct: false,
+      },
+      {
+        text: 'RC4 ',
+        correct: false,
+      },
+      {
+        text: 'MARS ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 31,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Bezpečnost algoritmu RSA je založena na obtížnosti řešení problému ',
+    img: null,
+    options: [
+      {
+        text: 'ECDLP ',
+        correct: false,
+      },
+      {
+        text: 'IFP ',
+        correct: true,
+      },
+      {
+        text: 'DSP ',
+        correct: false,
+      },
+      {
+        text: 'NSA ',
+        correct: false,
+      },
+      {
+        text: 'DLP ',
+        correct: false,
+      },
+      {
+        text: 'ECDH ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 32,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'Pro autentizaci se v bezdrátových sítích IEEE 802.16 (WiMAX) mezi klientem a bezdrátovým přístupovým bodem používá protokol: ',
+    img: null,
+    options: [
+      {
+        text: 'Kerberos ',
+        correct: false,
+      },
+      {
+        text: 'ESP ',
+        correct: false,
+      },
+      {
+        text: 'CHAP ',
+        correct: false,
+      },
+      {
+        text: 'Radius ',
+        correct: false,
+      },
+      {
+        text: 'Tacacs+',
+        correct: false,
+      },
+      {
+        text: 'EAP ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 33,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Algoritmus 3DES podporuje klíče o délce (bitů) ',
+    img: null,
+    options: [
+      {
+        text: '112',
+        correct: false,
+      },
+      {
+        text: '168',
+        correct: true,
+      },
+      {
+        text: '64',
+        correct: false,
+      },
+      {
+        text: '128',
+        correct: false,
+      },
+      {
+        text: '56',
+        correct: false,
+      },
+      {
+        text: '256',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 34,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question:
+      'Nejstarší protokol pro zabezpečení bezdrátových sítí 802.11 využívá šifrovací algoritmus <DOPLŇTE název algoritmu>. Pozn.: Na velikosti písmen v odpovědi nezáleží. ',
+    img: null,
+    options: [
+      {
+        text: 'RC4',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 35,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Nejstarší protokol pro zabezpečení bezdrátových sítí 802.11 se jmenuje <DOPLŇTE zkratku velkými písmeny>. ',
+    img: null,
+    options: [
+      {
+        text: 'WEP',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 36,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question:
+      'Protokol TKIP pro zabezpečení bezdrátových sítí 802.11 využívá šifrovací algoritmus <DOPLŇTE název algoritmu>. Pozn.: Na velikosti písmen v odpovědi nezáleží. ',
+    img: null,
+    options: [
+      {
+        text: 'RC4',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 37,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Délka výstupu hashovací funkce SHA-512 je <DOPLŇTE> bitů. ',
+    img: null,
+    options: [
+      {
+        text: '512',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 38,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Délka výstupu hashovací funkce SHA-256 je <DOPLŇTE> bitů. ',
+    img: null,
+    options: [
+      {
+        text: '256',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 39,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Délka výstupu hashovací funkce MD5 je <DOPLŇTE> bitů. ',
+    img: null,
+    options: [
+      {
+        text: '128',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 40,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Kolik rund má algoritmus AES pro délku klíče 256 bitů? ',
+    img: null,
+    options: [
+      {
+        text: '14',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 41,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Kolik rund má algoritmus AES pro délku klíče 128 bitů? ',
+    img: null,
+    options: [
+      {
+        text: '10',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 42,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question:
+      'Protokol pro šifrování dat v bezdrátových sítích 802.11 založený na proudové šifře RC4 a pracující s dynamickými klíči se jmenuje <DOPLŇTE zkratku velkými písmeny>. ',
+    img: null,
+    options: [
+      {
+        text: 'TKIP',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 43,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Délka výstupu hashovací funkce SHA-1 je <DOPLŇTE> bitů. ',
+    img: null,
+    options: [
+      {
+        text: '160',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 44,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Proces ověření identity nějaké entity se nazývá: ',
+    img: null,
+    options: [
+      {
+        text: 'nepopíratelnost ',
+        correct: false,
+      },
+      {
+        text: 'autentizace ',
+        correct: true,
+      },
+      {
+        text: 'důvěryhodnost ',
+        correct: false,
+      },
+      {
+        text: 'integrita ',
+        correct: false,
+      },
+      {
+        text: 'autorizace ',
+        correct: false,
+      },
+      {
+        text: 'utajení ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 45,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Standard AES podporuje klíče délky (bitů) ',
+    img: null,
+    options: [
+      {
+        text: '>1024 ',
+        correct: false,
+      },
+      {
+        text: '1024 ',
+        correct: false,
+      },
+      {
+        text: '512',
+        correct: false,
+      },
+      {
+        text: '384 ',
+        correct: false,
+      },
+      {
+        text: '256 ',
+        correct: true,
+      },
+      {
+        text: '192 ',
+        correct: true,
+      },
+      {
+        text: '168 ',
+        correct: false,
+      },
+      {
+        text: '128 ',
+        correct: true,
+      },
+      {
+        text: '64 ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 46,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Která bloková šifra má počet rund závislý na velikosti bloku? ',
+    img: null,
+    options: [
+      {
+        text: 'Rijndael  ',
+        correct: true,
+      },
+      {
+        text: 'Blowfish  ',
+        correct: true,
+      },
+      {
+        text: 'DES  ',
+        correct: false,
+      },
+      {
+        text: 'RC6  ',
+        correct: false,
+      },
+      {
+        text: 'Serpent  ',
+        correct: false,
+      },
+      {
+        text: 'MARS  ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 47,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je znázorněna:',
+    img: '/img/kab-7.png',
+    options: [
+      {
+        text: 'obecné schéma hashovací funkce  ',
+        correct: true,
+      },
+      {
+        text: 'standardizovaná procedura el. podpisu  ',
+        correct: false,
+      },
+      {
+        text: 'obecné schéma asymetrického algoritmu  ',
+        correct: false,
+      },
+      {
+        text: 'jiná správná odpověď  ',
+        correct: false,
+      },
+      {
+        text: 'obecné schéma iterované blokové šifry  ',
+        correct: false,
+      },
+      {
+        text: 'obecné schéma autentizačního protokolu  ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 48,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Operace SubBytes v algoritmu AES realizuje ',
+    img: null,
+    options: [
+      {
+        text: 'Viniérovu šifru ',
+        correct: false,
+      },
+      {
+        text: 'transpozici s neúplnou tabulkou  ',
+        correct: false,
+      },
+      {
+        text: 'polyalfabetickou substituční šifru ',
+        correct: false,
+      },
+      {
+        text: 'afinní substituční šifru  ',
+        correct: true,
+      },
+      {
+        text: 'transpozici s úplnou tabulkou a heslem  ',
+        correct: false,
+      },
+      {
+        text: 'afinní transpoziční šifru  ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 49,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'IPsec umožňuje autentizaci pomocí ',
+    img: null,
+    options: [
+      {
+        text: 'PSK  ',
+        correct: true,
+      },
+      {
+        text: 'RSA ',
+        correct: false,
+      },
+      {
+        text: 'certifikátů X.509 ',
+        correct: true,
+      },
+      {
+        text: 'AES  ',
+        correct: false,
+      },
+      {
+        text: 'HMAC-MD5  ',
+        correct: false,
+      },
+      {
+        text: 'HMAC-SHA1  ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 50,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Odolnost vůči získání jiné předlohy (2nd preimage resistance) znamená, že: ',
+    img: null,
+    options: [
+      {
+        text: `je výpočetně nemožné systematicky vytvářet dva libovolné různé vstupní texty x a x' pro které platí, že x != x' a zároveň h(x)=h(x') `,
+        correct: false,
+      },
+      {
+        text: 'žádná z uvedených odpovědí není správná  ',
+        correct: false,
+      },
+      {
+        text: `je výpočetně nemožné nalézt ke vstupu x druhý vstup x' takový, že x' != x a zároveň h(x')=h(x) `,
+        correct: true,
+      },
+      {
+        text: `Nelze najít předobraz x' takový, že h(x')=y, když známe pouze h a y y neznáme x' `,
+        correct: false,
+      },
+      {
+        text: `je obtížné nalézt x a y taková, že x !=y a zároveň H(x) a H(y) se liší jen v malém počtu bitů `,
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 51,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'Při šifrované komunikaci s použitím symetrického algoritmu mezi N subjekty bez použití dalších technologií pro distribuci klíčů je potřeba <DOPLŇTE> různých klíčů. Pozn.: Předpokládejte, že pro komunikace mezi dvojící účastníků A,B (A->B a B->A) se použije vždy stejný klíč. ',
+    img: null,
+    options: [
+      {
+        text: '2N ',
+        correct: false,
+      },
+      {
+        text: 'N(N-1) ',
+        correct: false,
+      },
+      {
+        text: ' N(N-1)/2 ',
+        correct: true,
+      },
+      {
+        text: '2N-2 ',
+        correct: false,
+      },
+      {
+        text: 'N2 ',
+        correct: false,
+      },
+      {
+        text: '1024 ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 52,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Informace o použitých kryptografických algoritmech a klíčích je u protokolu IPsec uchovávána v: ',
+    img: null,
+    options: [
+      {
+        text: 'RLP  ',
+        correct: false,
+      },
+      {
+        text: 'SPD ',
+        correct: false,
+      },
+      {
+        text: 'ESP ',
+        correct: false,
+      },
+      {
+        text: 'SPI  ',
+        correct: false,
+      },
+      {
+        text: 'SAD  ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 53,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Příkladem aktivního útoku na kryptosystém je ',
+    img: null,
+    options: [
+      {
+        text: 'útok se znalostí vybraných OT a ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí adaptivních vybraných OT ',
+        correct: true,
+      },
+      {
+        text: 'útok se znalostí ŠT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí vybraných OT ',
+        correct: false,
+      },
+      {
+        text: 'útok se znalostí ŠT a OT ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 54,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'Jak je u protokolu WEP zajištěna integrita přenášených dat proti úmyslným změnám? (jedna odpověď) Poznámka: ověřována je pomocí CRC32, ale zajištěna není nijak',
+    img: null,
+    options: [
+      {
+        text: 'pomocí protokolu EAP-TLS ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu TKIP ',
+        correct: false,
+      },
+      {
+        text: 'není zajištěna ',
+        correct: true,
+      },
+      {
+        text: 'pomocí algoritmu CRC32 ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu CHAP ',
+        correct: false,
+      },
+      {
+        text: 'pomocí algoritmu MIC ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 55,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Entropie kryptosystému AES, který používá největší možný klíč je <DOPLŇTE ČÍSLO> bitů. ',
+    img: null,
+    options: [
+      {
+        text: '256',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 56,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Entropie kryptosystému DES je <DOPLŇTE ČÍSLO> bitů. ',
+    img: null,
+    options: [
+      {
+        text: '56',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 57,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Které podmínky musí být splněny, aby Vernamova šifra byla absolutně bezpečnám kryptosystémem? ',
+    img: null,
+    options: [
+      {
+        text: 'klíč lze použít maximálně třikrát za rok ',
+        correct: false,
+      },
+      {
+        text: 'jiná správná odpověď ',
+        correct: true,
+      },
+      {
+        text: 'klíč musí být minimálně o polovinu kratší než délka OT ',
+        correct: false,
+      },
+      {
+        text: 'klíč musí být generován v certifikovaném SW na zabezpečeném počítači ',
+        correct: false,
+      },
+      {
+        text: 'klíč musí znát pouze odesílatel příjemce a cerfikační autorita ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 58,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Informace o tom, které pakety mají být zabezpečeny je u protokolu IPsec uchovávána v ',
+    img: null,
+    options: [
+      {
+        text: 'RLP',
+        correct: false,
+      },
+      {
+        text: 'SPD',
+        correct: true,
+      },
+      {
+        text: 'ESP',
+        correct: false,
+      },
+      {
+        text: 'SPI',
+        correct: false,
+      },
+      {
+        text: 'SAD',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 59,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Algoritmus RSA lze použít k: ',
+    img: null,
+    options: [
+      {
+        text: 'pouze podepisování ',
+        correct: false,
+      },
+      {
+        text: 'šifrování a podepisování ',
+        correct: true,
+      },
+      {
+        text: 'pouze šifrování ',
+        correct: false,
+      },
+      {
+        text: 'šifrování, podepisování a výměně klíčů ',
+        correct: false,
+      },
+      {
+        text: 'výměně klíčů a šifrování ',
+        correct: false,
+      },
+      {
+        text: 'pouze výměně klíčů ',
         correct: false,
       },
     ],
@@ -571,6 +1661,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 60,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Protokol CCSP (Change Cipher Specification Protocol) má u TLS 1.0 na starosti',
     img: null,
     options: [
@@ -603,6 +1694,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 61,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Protokol IKE zajišťuje',
     img: null,
     options: [
@@ -631,6 +1723,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 62,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Diffie-Hellmanův algoritmus lze použít k',
     img: null,
     options: [
@@ -659,6 +1752,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 63,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Která tvrzení jsou pravdivá o protokolu CHAP',
     img: null,
     options: [
@@ -691,6 +1785,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 64,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Kerberos je',
     img: null,
     options: [
@@ -723,6 +1818,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 65,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Nepopiratelnost',
     img: null,
     options: [
@@ -751,6 +1847,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 66,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Algoritmus Whirlpool je',
     img: null,
     options: [
@@ -783,6 +1880,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 67,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Protokol RLP (Record Layer Protocol) má u SSL/TLS na starosti',
     img: null,
     options: [
@@ -815,6 +1913,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 68,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Protokol RLP (record Layer Protocol) neřeší',
     img: null,
     options: [
@@ -847,6 +1946,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 69,
     subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
     question: 'Která tvrzení jsou pravdivá o protokolu PAP (Password authentication protocol)',
     img: null,
     options: [
@@ -872,6 +1972,213 @@ export const KAB_QUESTIONS: QuestionT[] = [
       },
       {
         text: 'autentizace probíhá pouze na počátku spojení',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 70,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Prokázání totožnosti se odborně nazývá ',
+    img: null,
+    options: [
+      {
+        text: 'šifrování ',
+        correct: false,
+      },
+      {
+        text: 'šikana policejního státu ',
+        correct: false,
+      },
+      {
+        text: 'nepopiratelnost ',
+        correct: false,
+      },
+      {
+        text: 'biometrika ',
+        correct: false,
+      },
+      {
+        text: 'autorizace ',
+        correct: false,
+      },
+      {
+        text: 'autentizace ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 71,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question:
+      'Schopnost systému zajišťující, že přenášená informace nebyla zničena, ztracena nebo modifikována, respektive detekce takovéto změny se nazývá ',
+    img: null,
+    options: [
+      {
+        text: 'zabezpečení ',
+        correct: false,
+      },
+      {
+        text: 'důvěryhodnost ',
+        correct: false,
+      },
+      {
+        text: 'utajení ',
+        correct: false,
+      },
+      {
+        text: 'autentizace ',
+        correct: false,
+      },
+      {
+        text: 'nepopiratelnost ',
+        correct: false,
+      },
+      {
+        text: 'integrita ',
+        correct: true,
+      },
+      {
+        text: 'autorizace  ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 72,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Protokol TKIP používá klíče dlouhé ',
+    img: null,
+    options: [
+      {
+        text: '2048',
+        correct: false,
+      },
+      {
+        text: '40',
+        correct: false,
+      },
+      {
+        text: '1024',
+        correct: false,
+      },
+      {
+        text: '128',
+        correct: true,
+      },
+      {
+        text: '64',
+        correct: false,
+      },
+      {
+        text: '256',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 73,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Jak je u protokolu WPA zajištěna integrita přenášených dat proti úmyslným změnám? ',
+    img: null,
+    options: [
+      {
+        text: 'Pomocí algoritmu MIC ',
+        correct: true,
+      },
+      {
+        text: 'není zajištěna ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu CHAP ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu TKIP ',
+        correct: false,
+      },
+      {
+        text: 'pomocí algoritmu CRC32 ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu EAP-TLS ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 74,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Jak je u protokolu WPA2(IEEE 802.11i) zajištěna integrita přenášených dat proti úmyslným změnám? ',
+    img: null,
+    options: [
+      {
+        text: 'Pomocí algoritmu CRC32 ',
+        correct: false,
+      },
+      {
+        text: 'není zajištěna ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu CCMP ',
+        correct: true,
+      },
+      {
+        text: 'pomocí protokolu MIC ',
+        correct: false,
+      },
+      {
+        text: 'pomocí algoritmu TKIP ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu EAP-TLS ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 75,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Nevýhodou režimu ECB je: ',
+    img: null,
+    options: [
+      {
+        text: 'velké šíření chyb ',
+        correct: false,
+      },
+      {
+        text: 'složitost implementace ',
+        correct: false,
+      },
+      {
+        text: 'nemožnost paralelizace šifrování ',
+        correct: false,
+      },
+      {
+        text: 'odolnost proti modifikaci bloku ŠT ',
+        correct: true,
+      },
+      {
+        text: 'nemožnost paralelizace šifrování ',
+        correct: false,
+      },
+      {
+        text: 'pomocí protokolu EAP-TLS ',
+        correct: false,
+      },
+      {
+        text: 'možnost realizace cut-and-paste útoku ',
         correct: true,
       },
     ],

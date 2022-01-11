@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import { useGlobalContext } from '../context/ManagedContext';
-import { QuestionT } from '../types';
+import { QuestionT, QuestionType } from '../types';
 import Layout from '../components/containers/Layout';
 import Button from '../components/common/Button';
 import Questions from '../components/quiz/Questions';
@@ -17,8 +17,16 @@ const Finish: React.FC = () => {
 
   (savedQuestions as QuestionT[]).forEach((i, indexI) => {
     i.options.forEach((o, indexO) => {
-      if (scores[indexI] && scores[indexI].includes(indexO)) {
-        if (o.correct) {
+      if (i.type === QuestionType.QUESTION) {
+        if (scores[indexI] && scores[indexI].includes(indexO)) {
+          if (o.correct) {
+            correct++;
+          } else {
+            mistakes++;
+          }
+        }
+      } else if (i.type === QuestionType.OPEN) {
+        if (scores[indexI] && scores[indexI].includes(o.text)) {
           correct++;
         } else {
           mistakes++;
@@ -63,7 +71,11 @@ const Finish: React.FC = () => {
             <div key={index}>
               <Questions data={i} />
               <div className="border-2 border-accent-2 rounded-lg overflow-hidden mb-5">
-                <AnswersResults options={i.options} score={scores[index] ?? []} />
+                <AnswersResults
+                  type={i.type}
+                  options={i.options}
+                  score={scores[index] ?? (i.type === QuestionType.QUESTION ? [] : 'pica')}
+                />
                 <div className="flex justify-center py-2 border-t-2 border-accent-2">
                   <Button onClick={() => handleFrequency(i.id)}>
                     {frequencies.includes(i.id) ? '⬇️ Decrease frequency' : '⬆️ Increase frequency'}

@@ -7,11 +7,13 @@ type Props = {
   min?: number;
   className?: string;
   value?: string;
+  placeholder?: string;
   onChange?: (e: any) => void;
 };
 
 const Input: React.FC<Props> = ({ className, ...props }) => (
   <input
+    onKeyUp={(e) => e.stopPropagation()}
     className={cn('shadow text-center rounded-lg py-2 px-3 text-md font-bold border-2 bg-primary border-accent-2 text-accent-5', className)}
     {...props}
   />

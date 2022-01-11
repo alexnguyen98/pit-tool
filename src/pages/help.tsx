@@ -25,6 +25,16 @@ const Help: React.FC = () => {
           <p>Incorrect choice</p>
           <br />
         </Accordion>
+        <Accordion header="Changing the subject">
+          <p>Go to:</p>
+          <p className="font-bold">Settings &gt; Subject</p>
+        </Accordion>
+        <Accordion header="Having problem with loading">
+          <p>1. Go to the home page</p>
+          <p>2. Delete your browser localstorage</p>
+          <p>3. Refresh</p>
+          <p>4. Try again</p>
+        </Accordion>
       </div>
     </Layout>
   );

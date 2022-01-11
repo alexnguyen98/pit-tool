@@ -1,9 +1,10 @@
-import { QuestionT, SubjectType } from '../types';
+import { QuestionT, SubjectType, QuestionType } from '../types';
 
 export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 0,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'O odstoupení z funkce člena orgánu obchodní korporace platí, že',
     img: null,
     options: [
@@ -30,6 +31,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 1,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Ústavní soud',
     img: null,
     options: [
@@ -56,6 +58,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 2,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Odškodnění duševních útrap je',
     img: null,
     options: [
@@ -80,6 +83,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 3,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Všechny předpoklady vzniku škody jsou',
     img: null,
     options: [
@@ -104,6 +108,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 4,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Právo spojené s právem duševního vlastnictví je',
     img: null,
     options: [
@@ -128,6 +133,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 5,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Základní kapitál obchodní korporace',
     img: null,
     options: [
@@ -152,6 +158,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 6,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Základní kapitál u akciové společnosti musí být minimálně',
     img: null,
     options: [
@@ -176,6 +183,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 7,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Způsoby náhrady škody jsou',
     img: null,
     options: [
@@ -200,6 +208,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 8,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Právo Duševního vlastnictví v současnosti platném zákoně není upraveno v následujícím zákoně',
     img: null,
     options: [
@@ -224,6 +233,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 9,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Živností není',
     img: null,
     options: [
@@ -248,6 +258,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 10,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Pracovní vztah uzavřený smlouvou na dobu určitou',
     img: null,
     options: [
@@ -272,6 +283,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 11,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Návrh na zápis do obchodního rejstříku v akciové společnosti podepisuje',
     img: null,
     options: [
@@ -296,6 +308,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 12,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Podle živnostenského zákona je vždy překážkou pro získání živnosti Vyberte jednu z nabízených možností',
     img: null,
     options: [
@@ -320,6 +333,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 13,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Podnikatel při jednání a podepisování může ke svému jménu připojit',
     img: null,
     options: [
@@ -344,6 +358,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 14,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Pracovní smlouva musí ze zákona obsahovat',
     img: null,
     options: [
@@ -368,6 +383,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 15,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Orgány EU jsou',
     img: null,
     options: [
@@ -392,6 +408,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 16,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Vynález v ČR, aby mohl být udělen, musí být',
     img: null,
     options: [
@@ -416,6 +433,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 17,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Patentové nároky mohou být',
     img: null,
     options: [
@@ -440,6 +458,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 18,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Licence na dobu neurčitou má výpovědní dobu',
     img: null,
     options: [
@@ -464,6 +483,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 19,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Pramenem práva není',
     img: null,
     options: [
@@ -488,6 +508,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 20,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'U výhradní licence platí, že',
     img: null,
     options: [
@@ -512,6 +533,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 21,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Základní kapitál u společnosti s ručením omezeným musí být minimálně',
     img: null,
     options: [
@@ -536,6 +558,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 22,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Společnost se zakládá',
     img: null,
     options: [
@@ -560,6 +583,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 23,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Minimální doba trvání ochrany majetkových práv autora autorského díla podle Bernské úmluvy je',
     img: null,
     options: [
@@ -584,6 +608,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 24,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Mezi primární právo EU patří',
     img: null,
     options: [
@@ -608,6 +633,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 25,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Pro volné živnosti',
     img: null,
     options: [
@@ -632,6 +658,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 26,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Právní norma se skládá z',
     img: null,
     options: [
@@ -656,6 +683,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 27,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Podnikatel má povinnost vést účetnictví',
     img: null,
     options: [
@@ -681,6 +709,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 28,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Pokud zaměstnavatel a zaměstnanec uzavřou pracovní smlouvu ústní formou',
     img: null,
     options: [
@@ -705,6 +734,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 29,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Věcná působnost autorského zákona - Autorské dílo - je',
     img: null,
     options: [
@@ -729,6 +759,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 30,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Software patent',
     img: null,
     options: [
@@ -753,6 +784,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 31,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Vynálezecká činnost podle zákona o vynálezech',
     img: null,
     options: [
@@ -777,6 +809,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 32,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Pro obchodní firmu platí',
     img: null,
     options: [
@@ -801,6 +834,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 33,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Podle §2106 NOZ, je-li vadné plnění podstatným porušením smlouvy, má kupující právo',
     img: null,
     options: [
@@ -825,6 +859,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 34,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Počítačovému programu v EU není možné',
     img: null,
     options: [
@@ -849,6 +884,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 35,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Za podnikatele se považuje vždy',
     img: null,
     options: [
@@ -873,6 +909,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 36,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Koncesované živnosti se dělí na',
     img: null,
     options: [
@@ -897,6 +934,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 37,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Jako užitný vzor nelze chránit',
     img: null,
     options: [
@@ -921,6 +959,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 38,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Podnikový vynález',
     img: null,
     options: [
@@ -945,6 +984,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 39,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Podle občanského zákoníku je osobou blízkou',
     img: null,
     options: [
@@ -969,6 +1009,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 40,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Osobní působnost autorského zákona se netýká',
     img: null,
     options: [
@@ -993,6 +1034,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 41,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Soustavnost podnikání znamená',
     img: null,
     options: [
@@ -1017,6 +1059,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 42,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Účinek patentu představuje',
     img: null,
     options: [
@@ -1041,6 +1084,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 43,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Bernská úmluva upravuje',
     img: null,
     options: [
@@ -1065,6 +1109,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 44,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Průmyslový vzor je',
     img: null,
     options: [
@@ -1089,6 +1134,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 45,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'U smlouvy o dílo je cena stanovena',
     img: null,
     options: [
@@ -1113,6 +1159,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 46,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Litigačním procesem není',
     img: null,
     options: [
@@ -1137,6 +1184,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 47,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Pro nakladatelskou licenční smlouvu platí, že',
     img: null,
     options: [
@@ -1162,6 +1210,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 48,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Licence nemůže být poskytnuta k',
     img: null,
     options: [
@@ -1190,6 +1239,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 49,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Promlčení',
     img: null,
     options: [
@@ -1214,6 +1264,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 50,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Živností není',
     img: null,
     options: [
@@ -1238,6 +1289,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 51,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Mezi všeobecné podmínky pro udělení živnostenského oprávnění patří',
     img: null,
     options: [
@@ -1262,6 +1314,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 52,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Minimální doba trvání ochrany majetkových práv autora autorského díla podle Autorského zákona je',
     img: null,
     options: [
@@ -1286,6 +1339,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 53,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Vklad',
     img: null,
     options: [
@@ -1310,6 +1364,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 54,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Právo duševního vlastnictví obsahuje následující podoblasti',
     img: null,
     options: [
@@ -1334,6 +1389,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 55,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Počítačový program je',
     img: null,
     options: [
@@ -1350,6 +1406,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 56,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Výpověď bez udání důvodu může předložit',
     img: null,
     options: [
@@ -1374,6 +1431,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 57,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Obchodní společností není',
     img: null,
     options: [
@@ -1402,6 +1460,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 58,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Účinnost',
     img: null,
     options: [
@@ -1426,6 +1485,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 59,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Mezi práva společníka obchodní korporace patří',
     img: null,
     options: [
@@ -1450,6 +1510,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 60,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Platnost',
     img: null,
     options: [
@@ -1474,6 +1535,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 61,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'U Prekluze',
     img: null,
     options: [
@@ -1498,6 +1560,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 62,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Princip teritoriality se dá označit tak, že',
     img: null,
     options: [
@@ -1522,6 +1585,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 63,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Mezi znaky podnikání ve smyslu občanského zákoníku nepatří',
     img: null,
     options: [
@@ -1546,6 +1610,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 64,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question:
       'Soukromoprávní vztahy mezinárodního práva soukromého mají vztah k jinému státu. Jde tedy o vztah s mezinárodním prvkem a jedná se o',
     img: null,
@@ -1571,6 +1636,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 65,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Vyberte jednu z nabízených možností:',
     img: null,
     options: [
@@ -1595,6 +1661,7 @@ export const PIT_QUESTIONS: QuestionT[] = [
   {
     id: 66,
     subject: SubjectType.PIT,
+    type: QuestionType.QUESTION,
     question: 'Mezi absolutní majetková práva nepatří',
     img: null,
     options: [

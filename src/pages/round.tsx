@@ -6,7 +6,7 @@ import Questions from '../components/quiz/Questions';
 import { QUESTIONS_MAP } from '../constants/questions';
 import { useGlobalContext } from '../context/ManagedContext';
 import { useRouter } from 'next/dist/client/router';
-import { SubjectType } from '../types';
+import { SubjectType, QuestionType } from '../types';
 
 const Round: React.FC = () => {
   const {
@@ -26,14 +26,20 @@ const Round: React.FC = () => {
   const router = useRouter();
 
   const QUESTIONS = QUESTIONS_MAP[subjectType as SubjectType];
-  const activeQ = QUESTIONS[activeIndex];
-  const score = scores[activeIndex] ?? [];
+  const activeQ = savedQuestions[activeIndex];
+  const score = scores[activeIndex] ?? (activeQ?.type === QuestionType.QUESTION ? [] : '');
   const isFirst = !activeIndex;
   const isLast = activeIndex === (savedQuestions.length < maxQuestions ? savedQuestions.length : maxQuestions) - 1;
   const isEmpty = !savedQuestions.length;
 
-  const handleScore = (index: number) => {
-    setScore({ [activeIndex]: score.includes(index) ? score.filter((i: number) => i !== index) : [...score, index] });
+  const handleScoreQuestion = (index: number) => {
+    setScore({
+      [activeIndex]: (score as number[]).includes(index) ? (score as number[]).filter((i: number) => i !== index) : [...score, index],
+    });
+  };
+
+  const handleScoreOpen = (text: string) => {
+    setScore({ [activeIndex]: text });
   };
 
   const handlePrev = () => {
@@ -59,7 +65,11 @@ const Round: React.FC = () => {
         return Math.random() * (weightB + weightA) - weightA;
       });
       const sliced = shuffled.slice(0, maxQuestions);
-      sliced.forEach((i) => i.options.sort(() => 0.5 - Math.random()));
+      sliced.forEach((i) => {
+        if (i.type === QuestionType.QUESTION) {
+          i.options.sort(() => 0.5 - Math.random());
+        }
+      });
       setQuestions(sliced);
     }
   }, [loading]);
@@ -87,7 +97,13 @@ const Round: React.FC = () => {
         </div>
         <Questions data={activeQ} />
         <div className="flex flex-col w-full md:w-160 border-2 border-accent-2 overflow-hidden rounded-lg">
-          <Answers options={activeQ.options} score={score} handleScore={handleScore} />
+          <Answers
+            type={activeQ.type}
+            options={activeQ.options}
+            score={score}
+            handleScoreQuestion={handleScoreQuestion}
+            handleScoreOpen={handleScoreOpen}
+          />
         </div>
         <div className="p-4 fixed left-0 right-0 bottom-0 z-10 bg-primary">
           <div className="w-full md:w-160 mx-auto flex justify-between">
