@@ -28,7 +28,7 @@ const Finish: React.FC = () => {
       } else if (i.type === QuestionType.OPEN) {
         if (scores[indexI] && scores[indexI].includes(o.text)) {
           correct++;
-        } else {
+        } else if (scores[indexI]) {
           mistakes++;
         }
       }
@@ -71,11 +71,7 @@ const Finish: React.FC = () => {
             <div key={index}>
               <Questions data={i} />
               <div className="border-2 border-accent-2 rounded-lg overflow-hidden mb-5">
-                <AnswersResults
-                  type={i.type}
-                  options={i.options}
-                  score={scores[index] ?? (i.type === QuestionType.QUESTION ? [] : 'pica')}
-                />
+                <AnswersResults type={i.type} options={i.options} score={scores[index] ?? (i.type === QuestionType.QUESTION ? [] : '')} />
                 <div className="flex justify-center py-2 border-t-2 border-accent-2">
                   <Button onClick={() => handleFrequency(i.id)}>
                     {frequencies.includes(i.id) ? '⬇️ Decrease frequency' : '⬆️ Increase frequency'}
