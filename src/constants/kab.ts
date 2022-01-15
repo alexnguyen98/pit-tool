@@ -334,7 +334,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
     subject: SubjectType.KAB,
     type: QuestionType.QUESTION,
     question:
-      'Mějme funkci T(n) = 15n3 + 175n^2 + 20n + 100000, která popisuje časovou složitost řešení nějakého problému. Vyberte ekvivalentní zápis časové složitosti této funkce pomocí O notace (shora neostře ohraničená).',
+      'Mějme funkci T(n) = 15n^3 + 175n^2 + 20n + 100000, která popisuje časovou složitost řešení nějakého problému. Vyberte ekvivalentní zápis časové složitosti této funkce pomocí O notace (shora neostře ohraničená).',
     img: null,
     options: [
       {
@@ -491,7 +491,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
     id: 15,
     subject: SubjectType.KAB,
     type: QuestionType.QUESTION,
-    question: 'Šifrování symetrickým algoritmem je v porovnání se asymetrickým:',
+    question: 'Šifrování symetrickým algoritmem je v porovnání s asymetrickým:',
     img: null,
     options: [
       {
@@ -1575,7 +1575,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
     id: 57,
     subject: SubjectType.KAB,
     type: QuestionType.QUESTION,
-    question: 'Které podmínky musí být splněny, aby Vernamova šifra byla absolutně bezpečnám kryptosystémem? ',
+    question: 'Které podmínky musí být splněny, aby Vernamova šifra byla absolutně bezpečným kryptosystémem? ',
     img: null,
     options: [
       {
@@ -1732,23 +1732,23 @@ export const KAB_QUESTIONS: QuestionT[] = [
     img: null,
     options: [
       {
-        text: 'a.	šifrování',
+        text: 'šifrování',
         correct: false,
       },
       {
-        text: 'b.	výměně klíčů',
+        text: 'výměně klíčů',
         correct: true,
       },
       {
-        text: 'c.	šifrování, podepisování a výměně klíčů',
+        text: 'šifrování, podepisování a výměně klíčů',
         correct: false,
       },
       {
-        text: 'd.	šifrování a podepisování',
+        text: 'šifrování a podepisování',
         correct: false,
       },
       {
-        text: 'e.	podepisování',
+        text: 'podepisování',
         correct: false,
       },
     ],
@@ -2166,7 +2166,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
         correct: false,
       },
       {
-        text: 'nemožnost paralelizace šifrování ',
+        text: 'nemožnost paralelizace dešifrování ',
         correct: false,
       },
       {
@@ -3008,7 +3008,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
         correct: true,
       },
       {
-        text: 'má dvě moţné formy: verifikaci a identifikaci ',
+        text: 'má dvě různé formy: verifikaci a identifikaci ',
         correct: false,
       },
       {
@@ -3259,27 +3259,14 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 109,
     subject: SubjectType.KAB,
-    type: QuestionType.QUESTION,
-    question: 'Biometrie má kromě řady výhod i určité nevýhody. Doplňte do věty jedno slovo tak aby dávala jak smysl (gramaticky, syntakticky i sémanticky) a poukázala na největší z těchto nevýhod. Na velikosti písmen nezáleží, odpověď piště s diakritikou. ',
+    type: QuestionType.OPEN,
+    question: 'Biometrie má kromě řady výhod i určité nevýhody. Doplňte do věty jedno slovo tak aby dávala jak smysl (gramaticky, syntakticky i sémanticky) a poukázala na největší z těchto nevýhod. Na velikosti písmen nezáleží, odpověď piště s diakritikou. \nBiometrie z nás dělá [SLOVO] klíč. ',
     img: null,
     options: [
       {
         text: 'univerzální ',
         correct: true,
       },
-      {
-        text: 'reverzní ',
-        correct: false,
-      },
-      {
-        text: 'perverzní ',
-        correct: false,
-      },
-      {
-        text: 'seriozní ',
-        correct: false,
-      },
-
     ],
   },
   {
@@ -3471,21 +3458,13 @@ export const KAB_QUESTIONS: QuestionT[] = [
   {
     id: 116,
     subject: SubjectType.KAB,
-    type: QuestionType.QUESTION,
+    type: QuestionType.OPEN,
     question: 'Šifrovací algoritmus, kdy existuje unikátní mapování jednoho znaku abecedy otevřeného textu na právě jeden znak abecedy šifrovaného textu, se označuje <DOPLŇTE dvě slova> šifra. ',
     img: null,
     options: [
       {
         text: 'monoalfabetická substituční ',
         correct: true,
-      },
-      {
-        text: 'polyalfabetická substituční ',
-        correct: false,
-      },
-      {
-        text: 'very afinní',
-        correct: false,
       },
     ],
   },
