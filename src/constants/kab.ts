@@ -334,7 +334,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
     subject: SubjectType.KAB,
     type: QuestionType.QUESTION,
     question:
-      'Mějme funkci T(n) = 15n3 + 175n^2 + 20n + 100000, která popisuje časovou složitost řešení nějakého problému. Vyberte ekvivalentní zápis časové složitosti této funkce pomocí O notace (shora neostře ohraničená).',
+      'Mějme funkci T(n) = 15n^3 + 175n^2 + 20n + 100000, která popisuje časovou složitost řešení nějakého problému. Vyberte ekvivalentní zápis časové složitosti této funkce pomocí O notace (shora neostře ohraničená).',
     img: null,
     options: [
       {
@@ -491,7 +491,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
     id: 15,
     subject: SubjectType.KAB,
     type: QuestionType.QUESTION,
-    question: 'Šifrování symetrickým algoritmem je v porovnání se asymetrickým:',
+    question: 'Šifrování symetrickým algoritmem je v porovnání s asymetrickým:',
     img: null,
     options: [
       {
@@ -1575,7 +1575,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
     id: 57,
     subject: SubjectType.KAB,
     type: QuestionType.QUESTION,
-    question: 'Které podmínky musí být splněny, aby Vernamova šifra byla absolutně bezpečnám kryptosystémem? ',
+    question: 'Které podmínky musí být splněny, aby Vernamova šifra byla absolutně bezpečným kryptosystémem? ',
     img: null,
     options: [
       {
@@ -1732,23 +1732,23 @@ export const KAB_QUESTIONS: QuestionT[] = [
     img: null,
     options: [
       {
-        text: 'a.	šifrování',
+        text: 'šifrování',
         correct: false,
       },
       {
-        text: 'b.	výměně klíčů',
+        text: 'výměně klíčů',
         correct: true,
       },
       {
-        text: 'c.	šifrování, podepisování a výměně klíčů',
+        text: 'šifrování, podepisování a výměně klíčů',
         correct: false,
       },
       {
-        text: 'd.	šifrování a podepisování',
+        text: 'šifrování a podepisování',
         correct: false,
       },
       {
-        text: 'e.	podepisování',
+        text: 'podepisování',
         correct: false,
       },
     ],
@@ -2166,7 +2166,7 @@ export const KAB_QUESTIONS: QuestionT[] = [
         correct: false,
       },
       {
-        text: 'nemožnost paralelizace šifrování ',
+        text: 'nemožnost paralelizace dešifrování ',
         correct: false,
       },
       {
@@ -2922,6 +2922,614 @@ export const KAB_QUESTIONS: QuestionT[] = [
       },
       {
         text: 'směrovač ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 99,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Která tvrzení o protokolu Kerberos jsou pravdivá? ',
+    img: null,
+    options: [
+      {
+        text: 'jedná se o účtovací (accounting) protokol ',
+        correct: false,
+      },
+      {
+        text: 'jedná se o autentizační protokol ',
+        correct: true,
+      },
+      {
+        text: 'nepatří do kategorie AAA ',
+        correct: true,
+      },
+      {
+        text: 'jde o protokol pro bezpečnou distribuci multicastového a broadcastového vysílání ',
+        correct: false,
+      },
+      {
+        text: 'patří do kategorie AAA ',
+        correct: false,
+      },
+      {
+        text: 'jedná se o zastaralý mechanismus zabezpečení bezdrátových sítí ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 100,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'OT byl podroben jedné transformaci na ŠT. Na základě analýzy grafu FA určete, o jaký typy šifry se mohlo jednat. ',
+    img: '/img/kab-9.png',
+    options: [
+      {
+        text: 'monoalfabetická s posunem ',
+        correct: false,
+      },
+      {
+        text: 'transpoziční ',
+        correct: false,
+      },
+      {
+        text: 'afinní ',
+        correct: false,
+      },
+      {
+        text: 'asymetrická ',
+        correct: false,
+      },
+      {
+        text: 'Polyalfabetická ',
+        correct: true,
+      },
+      {
+        text: 'monoalfabetická s klíčem ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 101,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Autorizace ',
+    img: null,
+    options: [
+      {
+        text: 'je proces ověření identity entity (člověk, program, systém) ',
+        correct: false,
+      },
+      {
+        text: 'je oprávnění přístupu k systémovým zdrojům ',
+        correct: true,
+      },
+      {
+        text: 'má dvě různé formy: verifikaci a identifikaci ',
+        correct: false,
+      },
+      {
+        text: 'je zajištěno hashovacími funkcemi ',
+        correct: false,
+      },
+      {
+        text: 'je zajištění stavu, kdy je informace dosažitelná pouze autorizovaným subjektům ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 102,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Kdy a k čemu se používá Kasisskiho test ? ',
+    img: null,
+    options: [
+      {
+        text: 'pro odhad délky použitého klíče ',
+        correct: true,
+      },
+      {
+        text: 'při luštění afinních šifer ',
+        correct: false,
+      },
+      {
+        text: 'pro odhad doby nutné k prolomení šifry ',
+        correct: false,
+      },
+      {
+        text: 'při luštění monoalfabetických šifer ',
+        correct: false,
+      },
+      {
+        text: 'při luštění transpozičních šifer ',
+        correct: false,
+      },
+      {
+        text: 'při luštění polyalfabetických šifer ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 103,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Prohlédněte si obrázek a zvolte odpověď, která ho nejlépe popisuje: ',
+    img: '/img/kab-10.png',
+    options: [
+      {
+        text: 'model proudové šifry ',
+        correct: false,
+      },
+      {
+        text: 'odvození rundových klíčů pro AES ',
+        correct: false,
+      },
+      {
+        text: 'schéma odvození klíčů u SSL ',
+        correct: true,
+      },
+      {
+        text: 'odvození klíčů pro HMAC ',
+        correct: false,
+      },
+      {
+        text: 'odvození rundových klíčů pro RSA ',
+        correct: false,
+      },
+      {
+        text: 'schéma dvození klíčů u IKE ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 104,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Následující schéma popisuje: ',
+    img: '/img/kab-11.png',
+    options: [
+      {
+        text: 'obecný model asynchronní proudové šifry ',
+        correct: false,
+      },
+      {
+        text: 'obecný model synchronní proudové šifry ',
+        correct: false,
+      },
+      {
+        text: 'model asymetrické šifry ',
+        correct: false,
+      },
+      {
+        text: 'hashovací funkci, kde je kompresní funkce zrealizována blokovou šifrou ',
+        correct: true,
+      },
+      {
+        text: 'generátor náhodných posloupností ',
+        correct: false,
+      },
+      {
+        text: 'lineární zpětnovazební registr (LFSR) proudové šifry ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 105,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Základními částmi systému WPS jsou: ',
+    img: null,
+    options: [
+      {
+        text: 'AP (Access point) ',
+        correct: true,
+      },
+      {
+        text: 'Zadatel (Enrollee) ',
+        correct: true,
+      },
+      {
+        text: 'Suplikant ',
+        correct: false,
+      },
+      {
+        text: 'Autentizační server ',
+        correct: false,
+      },
+      {
+        text: 'Registrátor ',
+        correct: true,
+      },
+      {
+        text: 'Autentizátor ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 106,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Jaká tvrzení jsou pravdivá o veličině Pre-Master Secret používané u SSL v průběhu procesu výměny klíčů? ',
+    img: null,
+    options: [
+      {
+        text: 'PreMasterSecret generuje pouze klient ',
+        correct: true,
+      },
+      {
+        text: 'PreMasterSecret generují obě strany ',
+        correct: false,
+      },
+      {
+        text: 'PreMasterSecret je odeslán na server zašifrovaný veřejným klíčem serveru ',
+        correct: true,
+      },
+      {
+        text: 'PreMasterSecret je odeslán na server zašifrovaný tajným klíčem klienta ',
+        correct: false,
+      },
+      {
+        text: 'PreMasterSecret generuje pouze server ',
+        correct: false,
+      },
+      {
+        text: 'PreMasterSecret se již dnes nepoužívá, byl nahrazen položkou MasterSecret ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 107,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Na obrázku je vidět topologie druhé laboratorní úlohy. Označte úseky topologie, na kterých nebyly přenášené IP pakety šifrovány. ',
+    img: '/img/kab-12.png',
+    options: [
+      {
+        text: 'B',
+        correct: false,
+      },
+      {
+        text: 'F',
+        correct: true,
+      },
+      {
+        text: 'E',
+        correct: false,
+      },
+      {
+        text: 'G',
+        correct: false,
+      },
+      {
+        text: 'A',
+        correct: true,
+      },
+      {
+        text: 'D',
+        correct: false,
+      },
+      {
+      text: 'C',
+      correct: false,
+      },
+    ],
+  },
+  {
+    id: 108,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Standard IEEE 802.1x se používá: ',
+    img: null,
+    options: [
+      {
+        text: 'K autentizaci v lokálních sítích realizovaných technologií Ethernet (UTP, nebo optika) ',
+        correct: true,
+      },
+      {
+        text: 'Ke generování a bezpečnému uchovávání soukromých klíčů ',
+        correct: false,
+      },
+      {
+        text: 'Ke generování a bezpečnému uchovávání veřejných klíčů ',
+        correct: false,
+      },
+      {
+        text: 'K autentizaci v mobilních sítích první generace ',
+        correct: false,
+      },
+      {
+        text: 'K autentizaci v lokálních bezdrátových sítích ',
+        correct: true,
+      },
+      {
+        text: 'K autentizaci v mobilních sítích druhé generace ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 109,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Biometrie má kromě řady výhod i určité nevýhody. Doplňte do věty jedno slovo tak aby dávala jak smysl (gramaticky, syntakticky i sémanticky) a poukázala na největší z těchto nevýhod. Na velikosti písmen nezáleží, odpověď piště s diakritikou. \nBiometrie z nás dělá [SLOVO] klíč. ',
+    img: null,
+    options: [
+      {
+        text: 'univerzální ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 110,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Typickým způsobem využití HSM (Hardware Security Module) je: ',
+    img: null,
+    options: [
+      {
+        text: 'Generování náhodných čísel pomocí kvantových procesů ',
+        correct: false,
+      },
+      {
+        text: 'Zabezpečení klíčů na SIM kartě ',
+        correct: false,
+      },
+      {
+        text: 'Zajištění digitálního podpisu pro emailovou komunikaci ',
+        correct: false,
+      },
+      {
+        text: 'Zabezpečení soukromých klíčů CA ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 111,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Která pole v certifikátu jsou obvykle označena jako “kritická rozšíření”? ',
+    img: null,
+    options: [
+      {
+        text: 'Basic Constraints ',
+        correct: true,
+      },
+      {
+        text: 'Subject ',
+        correct: false,
+      },
+      {
+        text: 'Not After ',
+        correct: false,
+      },
+      {
+        text: 'Key Usage ',
+        correct: true,
+      },
+      {
+        text: 'Not Before ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 112,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Které výroky o pojmu “Integrita” jsou pravdivé? ',
+    img: null,
+    options: [
+      {
+        text: 'Využívá asymetrické šifrovací algoritmy ',
+        correct: false,
+      },
+      {
+        text: 'Využívá kryptografické hashovací funkce ',
+        correct: true,
+      },
+      {
+        text: 'Využívá symetrické šifrovací algoritmy ',
+        correct: false,
+      },
+      {
+        text: 'Je to stav, kdy jsou užitečná data dostupná pouze autorizovaným subjektům ',
+        correct: false,
+      },
+      {
+        text: 'Je to proces ověření identity entity ',
+        correct: false,
+      },
+      {
+        text: 'Je to schopnost detekce změny přenášené informace ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 113,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Které výroky týkající se elektronického podpisu jsou pravdivé? ',
+    img: null,
+    options: [
+      {
+        text: 'Elektronický podpis musí být kvůli bezpečnosti příjemci doručen jiným komunikačním kanálem než samotná zpráva ',
+        correct: false,
+      },
+      {
+        text: 'Elektronický podpis dvou různých dokumentů se bude vždy lišit ',
+        correct: true,
+      },
+      {
+        text: 'Podepisuje se vždy celý dokument ',
+        correct: false,
+      },
+      {
+        text: 'Podepisuje se vždy otisk dokumentu ',
+        correct: true,
+      },
+      {
+        text: 'Někdy se podepisuje celý dokument, jindy pouze otisk dokumentu (to závisí na velikosti podepisovaného dokumentu) ',
+        correct: false,
+      },
+      {
+        text: 'Elektronický podpis dvou různých dokumentů bude vždy stejný ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 114,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Doplňte do prázdných políček správná slova tak, aby vzniklo schéma režimu Encrypted-then-MAC',
+    img: '/img/kab-13.png',
+    options: [
+      {
+        text: 'Plaintext',
+        correct: true,
+      },
+      {
+        text: 'Encryption',
+        correct: true,
+      },
+      {
+        text: 'Ciphertext',
+        correct: true,
+      },
+      {
+        text: 'Key',
+        correct: true,
+      },
+      {
+        text: 'Hash function',
+        correct: true,
+      },
+      {
+        text: 'MAC',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 115,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'V každé rundě (mimo poslední) algoritmu AES se odehrávají následující operace: ',
+    img: null,
+    options: [
+      {
+        text: 'SubstractKey ',
+        correct: false,
+      },
+      {
+        text: 'ShiftRow ',
+        correct: true,
+      },
+      {
+        text: 'SubBytes ',
+        correct: true,
+      },
+      {
+        text: 'MixColumns ',
+        correct: true,
+      },
+      {
+        text: 'AddRoundKey ',
+        correct: true,
+      },
+      {
+        text: 'RandomKeyMix ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 116,
+    subject: SubjectType.KAB,
+    type: QuestionType.OPEN,
+    question: 'Šifrovací algoritmus, kdy existuje unikátní mapování jednoho znaku abecedy otevřeného textu na právě jeden znak abecedy šifrovaného textu, se označuje <DOPLŇTE dvě slova> šifra. ',
+    img: null,
+    options: [
+      {
+        text: 'monoalfabetická substituční ',
+        correct: true,
+      },
+    ],
+  },
+  {
+    id: 117,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Vyberte pravdivé výroky o protokolu PEAPv0 (Protected EAP) ',
+    img: null,
+    options: [
+      {
+        text: 'Autentizace serveru je realizována pomocí certifikátu X.509 ',
+        correct: true,
+      },
+      {
+        text: 'Autentizace klienta je realizována pomocí protokolu MS-CHAPv2 ',
+        correct: true,
+      },
+      {
+        text: 'Nepodporuje autentizaci serveru ',
+        correct: false,
+      },
+      {
+        text: 'Umožňuje vzájemnou autentizaci klienta a serveru ',
+        correct: true,
+      },
+      {
+        text: 'Autentizace klienta je realizována pomocí protokolu PAP ',
+        correct: false,
+      },
+      {
+        text: 'Autentizace klienta je realizována pomocí certifikátu ',
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 118,
+    subject: SubjectType.KAB,
+    type: QuestionType.QUESTION,
+    question: 'Při šifrované komunikaci s použitím symetrického algoritmu mezi N subjekty bez použití dalších technologií pro distribuci klíčů je potřeba <DOPLŇTE> různých klíčů. \nPozn.: Předpokládejte, že pro komunikace mezi dvojící účastníků A,B (A->B a B->A) se použijí dva různé klíče ',
+    img: null,
+    options: [
+      {
+        text: '2N',
+        correct: false,
+      },
+      {
+        text: 'N(N-1)',
+        correct: true,
+      },
+      {
+        text: 'N(N-1)/2',
+        correct: false,
+      },
+      {
+        text: '2N-2',
+        correct: false,
+      },
+      {
+        text: 'N^2',
+        correct: false,
+      },
+      {
+        text: '1024',
         correct: false,
       },
     ],
